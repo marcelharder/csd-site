@@ -12,4 +12,6 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  linkToCSD() { window.location.href = "http://77.173.53.32:8046"; }
+
 }

@@ -2,47 +2,66 @@
   <nav
     class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-1"
   >
-    <div class="container">
-     
-      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]="{ show: isExpanded }">
-              
-       
 
-      <!--   <div class="dropdown ml-2 mr-2" dropdown>
-          <a class="dropdown-toggle"  dropdownToggle>| Products </a>
+
+      <div class="navbar-collapse collapse d-sm-inline-flex" [ngClass]="{ show: isExpanded }">
+        <a class="navbar-brand" href="#">Cardiac Software Developers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+         <div class="dropdown ml-2 mr-2" dropdown>
+          <a class="dropdown-toggle"  dropdownToggle>Products </a>
           <div class="dropdown-menu mt-3" *dropdownMenu>
-            <a class="dropdown-item" href="#" [routerLink]="['/companyadmin']">In Hospitals</a>
+            <a class="dropdown-item" href="#" [routerLink]="['/soa']">Surgical Outcomes Application</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" [routerLink]="['/search']">Search on serial#</a>
+            <a class="dropdown-item" href="#" [routerLink]="['/waitlist']">Waitinglist Application</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" [routerLink]="['/ovi']">Online Valve Inventory</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" [routerLink]="['/cda']">CardioHelp Data Application</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" [routerLink]="['/trac']">Trac for Hospitals</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" [routerLink]="['/echo']">Echo Reporting</a>
           </div>
-        </div> -->
+        </div>
         <ul class="navbar-nav flex-grow">
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }"> 
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a> 
-         </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }"> 
-            <a class="nav-link text-dark" [routerLink]="['/listOfRegistries']">Registries</a> 
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/about']">About</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }"> 
-            <a class="nav-link text-dark" [routerLink]="['/']">Statistics (under construction) </a> 
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }"> 
-            <a class="nav-link text-dark" [routerLink]="['/about']">About</a> 
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngIf="!loggedIn()"> 
-            <a class="nav-link text-dark" [routerLink]="['/login']">Login</a> 
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngIf="loggedIn()"> 
-            <a class="nav-link text-dark" (click)="logOut()">Logout</a> 
-          </li>
-
-
-
         </ul>
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/contact']">Contact</a>
+          </li>
+        </ul>
+
+        <!-- <ul class="navbar-nav flex-grow">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+         </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/listOfRegistries']">Registries</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/']">Statistics (under construction) </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/about']">About</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngIf="!loggedIn()">
+            <a class="nav-link text-dark" [routerLink]="['/login']">Login</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngIf="loggedIn()">
+            <a class="nav-link text-dark" (click)="logOut()">Logout</a>
+          </li>
+        </ul> -->
 
 
 
       </div>
-    </div>
+
   </nav>
 </header>

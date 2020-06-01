@@ -6,8 +6,6 @@ import { AuthGuard } from './_guards/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { ListOfRegistriesComponent } from './list-of-registries/list-of-registries.component';
 import { RegistriesResolver } from './_resolvers/RegistriesResolver';
-import { CassetteExplainComponent } from './cassette-explain/cassette-explain.component';
-import { ExplainHemodynamicsComponent } from './explain-hemodynamics/explain-hemodynamics.component';
 import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
@@ -20,10 +18,8 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
     { path: 'listOfRegistries', component: ListOfRegistriesComponent, resolve: {reg: RegistriesResolver}},
-   
+
     { path: 'users', component: UsersComponent },
-    { path: 'cassetteExplain', component: CassetteExplainComponent },
-    { path: 'hemodynamicsExplain', component: ExplainHemodynamicsComponent },
 
 
 
