@@ -50,6 +50,13 @@ import { MyLineChartComponent } from './_charts/my-line-chart/my-line-chart.comp
 import { PwpChartComponent } from './_charts/pwp-chart/pwp-chart.component';
 import { PapChartComponent } from './_charts/pap-chart/pap-chart.component';
 import { TempChartComponent } from './_charts/temp-chart/temp-chart.component';
+import { ContactComponent } from './contact/contact.component';
+import { SoaComponent } from './soa/soa.component';
+import { WaitlistComponent } from './waitlist/waitlist.component';
+import { OviComponent } from './ovi/ovi.component';
+import { CdaComponent } from './cda/cda.component';
+import { TracComponent } from './trac/trac.component';
+import { EchoComponent } from './echo/echo.component';
 
 
 export function tokenGetter() { return localStorage.getItem('token'); }
@@ -71,6 +78,13 @@ export function tokenGetter() { return localStorage.getItem('token'); }
       PwpChartComponent,
       PapChartComponent,
       TempChartComponent,
+      ContactComponent,
+      SoaComponent,
+      WaitlistComponent,
+      OviComponent,
+      CdaComponent,
+      TracComponent,
+      EchoComponent,
 
    ],
    imports: [

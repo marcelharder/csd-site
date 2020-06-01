@@ -1,0 +1,82 @@
+<div class="card">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-4">
+        <img
+          class="img-fluid"
+          src="../../assets/images/pagina-header-image-02.jpg"
+        />
+      </div>
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-header"><h4><span class="badge badge-info">Trac for Hospitals</span></h4></div>
+          <div class="card-body" style="background-color: beige;">
+            <div class="row">
+              <div class="col-sm-4"><h5><span class="badge badge-pill badge-secondary">Motivation:</span></h5></div>
+
+
+              <div class="col-sm-8" *ngIf="ShowPage(1)">
+                <div class="row">
+                  <div class="col-sm-12">page 1</div>
+                </div>
+              </div>
+              <div class="col-sm-8" *ngIf="ShowPage(2)">
+                <div class="row">
+                  <div class="col-sm-12">page 2</div>
+                </div>
+              </div>
+              <div class="col-sm-8" *ngIf="ShowPage(3)">
+                <div class="row">
+                  <div class="col-sm-12">page 3</div>
+                </div>
+              </div>
+              <div class="col-sm-8" *ngIf="ShowPage(4)">
+                <div class="row">
+                  <div class="col-sm-12">page 4</div>
+                </div>
+              </div>
+<div class="col-sm-8">
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                  <div class="row">
+                    <div class="col-sm-3"><button class="btn btn-primary btn-xxs" (click)="displayPage(1)">1</button></div>
+                    <div class="col-sm-3"><button class="btn btn-primary btn-xxs" (click)="displayPage(2)">2</button></div>
+                    <div class="col-sm-3"><button class="btn btn-primary btn-xxs" (click)="displayPage(3)">3</button></div>
+                    <div class="col-sm-3"><button class="btn btn-primary btn-xxs" (click)="displayPage(4)">4</button></div>
+                  </div>
+                </div>
+                <div class="col-sm-4"></div>
+
+
+
+
+              </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4"><h5><span class="badge badge-pill badge-secondary">Powerpoint:</span></h5></div>
+              <div class="col-sm-8"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><h5><span class="badge badge-pill badge-secondary">Tutorials:</span></h5></div>
+              <div class="col-sm-8"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"><h5><span class="badge badge-pill badge-secondary">Demo:</span></h5></div>
+              <div class="col-sm-8"></div>
+            </div>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <p>
+      &copy; 2020 - CardiacSoftwareDevelopers(<a (click)="linkToCSD()">CSD</a>)
+    </p>
+  </div>
+</div>

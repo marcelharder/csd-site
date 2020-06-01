@@ -7,10 +7,24 @@ import { LoginComponent } from './login/login.component';
 import { ListOfRegistriesComponent } from './list-of-registries/list-of-registries.component';
 import { RegistriesResolver } from './_resolvers/RegistriesResolver';
 import { UsersComponent } from './users/users.component';
+import { ContactComponent } from './contact/contact.component';
+import { SoaComponent } from './soa/soa.component';
+import { WaitlistComponent } from './waitlist/waitlist.component';
+import { OviComponent } from './ovi/ovi.component';
+import { CdaComponent } from './cda/cda.component';
+import { TracComponent } from './trac/trac.component';
+import { EchoComponent } from './echo/echo.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'soa', component: SoaComponent },
+  { path: 'waitlist', component: WaitlistComponent },
+  { path: 'ovi', component: OviComponent },
+  { path: 'cda', component: CdaComponent },
+  { path: 'trac', component: TracComponent },
+  { path: 'echo', component: EchoComponent },
   { path: 'login', component: LoginComponent },
   {
     path: '',
