@@ -1,0 +1,14 @@
+
+<div>
+  <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-sm-4"> <input type="file" name="profile" (change)="onFileSelect($event)" accept=".csv" /></div>
+      <div class="col-sm-4"> 
+        <div class="btn-group">
+          <button class="btn btn-primary" (click)="cancel()"><i class="fa fa-angle-left"></i> Cancel</button>
+          <button type="submit" class="btn btn-warning"><i class="fa fa-paper-plane"></i> Upload</button>
+        </div></div>
+      <div class="col-sm-4"> </div>
+     </div>
+  </form>
+</div>

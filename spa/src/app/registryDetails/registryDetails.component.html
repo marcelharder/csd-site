@@ -1,0 +1,925 @@
+<div class="card" *ngIf="showDetails()">
+  <div class="card-header">
+    <h2><span>Registry details</span></h2>
+  </div>
+  <div class="card-body">
+    <div class="tab-panel">
+      <tabset class="member-tabset">
+        <tab heading="General">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span class="badge badge-secondary">Registry ID:</span></h6>
+                    </div>
+                    <div class="col-sm-8"><span>{{reg.id}} </span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span class="badge badge-secondary">Cassette ID:</span></h6>
+                    </div>
+                    <div class="col-sm-8"><span>{{reg.cassette_id}} </span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span class="badge badge-secondary">Indication for use:</span></h6>
+                    </div>
+                    <div class="col-sm-8"><select [(ngModel)]="reg.indication" name="hos" class="form-control">
+                        <option *ngFor="let an of optionsIndication" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span class="badge badge-secondary">CardioHelp start:</span></h6>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" #dp="bsDatepicker" bsDatepicker
+                            [(ngModel)]="reg.start" [bsConfig]="{ dateInputFormat: 'YYYY/MM/DD' }" name="datum_start" />
+                        </div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.start_hour" name="hos3" class="form-control">
+                            <option *ngFor="let an of optionsHours">{{ an }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.start_min" name="hos4" class="form-control">
+                            <option *ngFor="let an of optionsMinutes">{{ an }}</option>
+                          </select></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span class="badge badge-secondary">CardioHelp stop:</span></h6>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" #dp="bsDatepicker" bsDatepicker [(ngModel)]="reg.stop"
+                            [bsConfig]="{ dateInputFormat: 'YYYY/MM/DD' }" name="datum_stop" />
+                        </div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.stop_hour" name="hos5" class="form-control">
+                            <option *ngFor="let an of optionsHours">{{ an }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.stop_min" name="hos6" class="form-control">
+                            <option *ngFor="let an of optionsMinutes">{{ an }}</option>
+                          </select></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span class="badge badge-secondary">Type support:</span></h6>
+                    </div>
+                    <div class="col-sm-8"><select [(ngModel)]="reg.support_mode" name="hos213" class="form-control">
+                        <option *ngFor="let an of optionsSupport" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h6><span></span></h6>
+                    </div>
+                    <div class="col-sm-8">
+                      <div *ngIf="reg.support_mode == 5">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <h6><span class="badge badge-secondary">Description:</span></h6>
+                          </div>
+                          <div class="col-sm-6"><input type="text" [(ngModel)]="reg.support_mode_other" name="test" />
+                          </div>
+                        </div>
+
+                      </div>
+                      <div *ngIf="reg.support_mode == 3">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <h6><span class="badge badge-secondary">The double lumen catheter used:</span></h6>
+                          </div>
+                          <div class="col-sm-1"><input type="checkbox" [(ngModel)]="reg.double_lumen" name="hos25" />
+                          </div>
+                          <div class="col-sm-5" *ngIf="reg.double_lumen">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <h6><span class="badge badge-secondary">Size used:</span></h6>
+                              </div>
+                              <div class="col-sm-6"><select [(ngModel)]="reg.selected_vvsize" name="hos20"
+                                  class="form-control">
+                                  <option *ngFor="let an of optionsVVSize" [value]="an.value">{{ an.description }}
+                                  </option>
+                                </select></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6><span class="badge badge-secondary">Site:</span></h6>
+                        </div>
+                        <div class="col-sm-3">
+                          <h6><span class="badge badge-secondary">Percutaneous:</span></h6>
+                        </div>
+                        <div class="col-sm-3">
+                          <h6><span class="badge badge-secondary">Size (Fr):</span></h6>
+                        </div>
+                        <div class="col-sm-3">
+                          <h6><span class="badge badge-secondary">Length (cm):</span></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-3"><select #site1 (change)="canSite1Changed(site1.value)"
+                            [(ngModel)]="reg.selected_cannulation_site_1" name="hos10" class="form-control">
+                            <option *ngFor="let an of optionsCS" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><input type="checkbox" [(ngModel)]="reg.percutaneous1" name="hos13" />
+                        </div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.selected_size_1" name="hos11"
+                            class="form-control">
+                            <option *ngFor="let an of optionsSizes1" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.selected_length_1" name="hos12"
+                            class="form-control">
+                            <option *ngFor="let an of optionsLength1" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-3"><select #site2 (change)="canSite2Changed(site2.value)"
+                            [(ngModel)]="reg.selected_cannulation_site_2" name="hos14" class="form-control">
+                            <option *ngFor="let an of optionsCS" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><input type="checkbox" [(ngModel)]="reg.percutaneous2" name="hos15" />
+                        </div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.selected_size_2" name="hos16"
+                            class="form-control">
+                            <option *ngFor="let an of optionsSizes2" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.selected_length_2" name="hos17"
+                            class="form-control">
+                            <option *ngFor="let an of optionsLength2" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-3"><select #site3 (change)="canSite3Changed(site3.value)"
+                            [(ngModel)]="reg.selected_cannulation_site_3" name="hos18" class="form-control">
+                            <option *ngFor="let an of optionsCS" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><input type="checkbox" [(ngModel)]="reg.percutaneous3" name="hos19" />
+                        </div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.selected_size_3" name="hos20"
+                            class="form-control">
+                            <option *ngFor="let an of optionsSizes3" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                        <div class="col-sm-3"><select [(ngModel)]="reg.selected_length_3" name="hos21"
+                            class="form-control">
+                            <option *ngFor="let an of optionsLength3" [value]="an.value">{{ an.description }}</option>
+                          </select></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-sm-4">
+                  <img src="../assets/images/cardiohelp.jpg" />
+                </div>
+              </div>
+
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </tab>
+        <tab heading="Patient data">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Age:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.patient_age" name="hos212" class="form-control">
+                        <option *ngFor="let an of optionsAge" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Gender:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.patient_gender" name="hos213" class="form-control">
+                        <option *ngFor="let an of optionsGender" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Height:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.selected_height" name="hos214" class="form-control">
+                        <option *ngFor="let an of optionsHeight" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Weight:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.selected_weight" name="hos215" class="form-control">
+                        <option *ngFor="let an of optionsWeight" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Patient transferred from other center:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.selected_fac" name="hos215" class="form-control">
+                        <option *ngFor="let an of optionsYN" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Intubated:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.selected_intubated" name="hos215"
+                        class="form-control">
+                        <option *ngFor="let an of optionsYN" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Pre-ELCS cardiac arrest:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.selected_arrest" name="hos215" class="form-control">
+                        <option *ngFor="let an of optionsYN" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h6><span class="badge badge-secondary">Bridge to transplant:</span></h6>
+                    </div>
+                    <div class="col-sm-6"><select [(ngModel)]="reg.btt" name="hos215" class="form-control">
+                        <option *ngFor="let an of optionsYN" [value]="an.value">{{ an.description }}</option>
+                      </select></div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <img src="../assets/images/cardiohelp.jpg" />
+                </div>
+
+              </div>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </tab>
+        <tab heading="Hemodynamics" (selectTab)="onSelect($event)">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="row" *ngIf="!showHemo()">
+                  <div class="col-sm-8"><h4><span>There is no hemodynamics file</span></h4></div>
+                  <div class="col-sm-2"><button class="btn btn-warning" (click)="explainUpload()">?</button></div>
+                  <div class="col-sm-2"><button class="btn btn-warning" (click)="showUploadStuff()">Upload</button></div>
+                </div>
+              <div class="row" *ngIf="showHemo()">
+                  <div class="row" *ngIf="!showGraphs()">
+
+                  <div class="col-sm-8">
+                    <h4><span>There is already a hemodynamics file</span></h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="btn-group">
+                      <button class="btn btn-danger mr-1" (click)="removeHemodynamicsFile()"><i class="fa fa-angle-left"></i> Remove</button>
+                      <button type="submit" class="btn btn-success" (click)="showHemodynamicsFile()"><i class="fa fa-angle-right"></i> Graphs</button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="row" *ngIf="showGraphs()">
+                    <app-hemodynamics [registryId]="reg.id" (out)="closingHemodynamics($event)"></app-hemodynamics>
+                  </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </tab>
+        <tab heading="Device complications">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="row ml-5 mb-2">
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.ox_failure"
+                          name="400">Oxygenator
+                        failure
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.tub_rupture"
+                          name="410">Tubing
+                        rupture
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row ml-5 mb-2">
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.conn_crack"
+                          name="420">Connector
+                        cracks
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.clots"
+                          name="430">Clots
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row ml-5 mb-2">
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.heat_malf"
+                          name="440">Heat exch.
+                        malfunction
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value=""
+                          [(ngModel)]="reg.cannula_problems">Cannula problems
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row ml-5 mb-2">
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.air_circuit"
+                          name="450">Air in
+                        circuit
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.pump_malf"
+                          name="460">Pump
+                        malfunction
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <img src="../assets/images/cardiohelp.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </tab>
+        <tab heading="Patient complications">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body ml-5">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.hemo"
+                          name="500">Hemorrhagic complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.hemo" style="background-color: beige;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.hemo_gi"
+                              name="460">GI hemorrhage
+                          </label>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.hemo_di"
+                              name="460">DIC
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.hemo_he"
+                              name="460">Hemolysis (plasma hgb > 50 mg/dl)
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.hemo_su"
+                              name="460">Surgical site bleeding
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.hemo_ca"
+                              name="460">Cannulation site bleeding
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.neuro"
+                          name="510">Neurologic complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.neuro" style="background-color: beige;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.neuro_br"
+                              name="460">Clinical brain death
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.neuro_se"
+                              name="460">Clinical seizures
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.neuro_in"
+                              name="460">Infarction (US or CT)
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.neuro_ee"
+                              name="460">EEG seizures
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.neuro_he"
+                              name="460">Hemorrhage (US or CT)
+                          </label>
+                        </div>
+                        <div class="col-sm-6"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.renal"
+                          name="520">Renal complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.renal" style="background-color: beige;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.renal_cr_1"
+                              name="460">Creatinine 1.5 - 3.0
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.renal_cr_2"
+                              name="460">Creatinine > 3.0
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.renal_di"
+                              name="460">Hemodialysis
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.renal_ca"
+                              name="460">CAVHD
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.renal_he"
+                              name="460">Hemofiltration
+                          </label>
+                        </div>
+                        <div class="col-sm-6"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.pulm"
+                          name="530">Pulmonary complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.pulm" style="background-color: beige;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.pulm_pn"
+                              name="460">Pneumothorax
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.pulm_pu"
+                              name="460">Pulmonary hemorrhage
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp"
+                          name="540">Cardiopulmonary complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.cp" style="background-color: beige;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_in"
+                              name="460">Inotropes on ECLS
+                          </label>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_cp"
+                              name="460">CPR required
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_my"
+                              name="460">Myocardial stun by echocardiography
+                          </label>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_ca"
+                              name="460">Cardiac arrhythmia
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_hy"
+                              name="460">Hypertension requiring vasodilator treatment
+                          </label>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_pda_1"
+                              name="460">PDA: R->L
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_pda_2"
+                              name="460">PDA: L->R
+                          </label>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_pda_3"
+                              name="460">PDA: bidirectional
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.reg.cp_pda_4"
+                              name="460">PDA: unknown
+                          </label>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_ta_1"
+                              name="460">Tamponade: Blood
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_ta_2"
+                              name="460">Tamponade: Serous
+                          </label>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.cp_ta_3"
+                              name="460">Tamponade: Air
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.infect"
+                          name="550">Infectious complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.infect" style="background-color: beige;">
+
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.infect_cu"
+                              name="460">Culture proven new infection
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.infect_wb"
+                              name="460">WBC > 1.500
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.meta"
+                          name="560">Metabolic complications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" *ngIf="reg.meta" style="background-color: beige;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.meta_gl_1"
+                              name="460">Glucose < 40 </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.meta_gl_2"
+                              name="460">Glucose > 240
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.meta_ph_1"
+                              name="460">pH < 7.2 </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.meta_ph_2"
+                              name="460">pH > 7.6
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.meta_hy"
+                              name="460">Hyperbilirubinemia
+                          </label>
+                        </div>
+                        <div class="col-sm-6"> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <img src="../assets/images/cardiohelp.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </tab>
+        <tab heading="Outcome">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body ml-5">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h6><span class="badge badge-secondary">Reason for discontinuing ECLS:</span></h6>
+                    </div>
+                    <div class="col-sm-4"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <select [(ngModel)]="reg.selected_reason" name="hos610" class="form-control">
+                        <option *ngFor="let an of optionsReasonsDiscontinuing" [value]="an.value">{{ an.description }}
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-sm-4"></div>
+                  </div>
+                  <div class="mt-2" style="background-color: beige;" *ngIf="reg.selected_reason == 1">
+
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="" [(ngModel)]="reg.discharged_alive"
+                            name="460">Discharged alive
+                        </label>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <h6><span class="badge badge-secondary">Cannula site repair:</span></h6>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <select [(ngModel)]="reg.selected_repair" name="hos620" class="form-control">
+                          <option *ngFor="let an of optionsRepair" [value]="an.value">{{ an.description }}</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <h6><span class="badge badge-secondary">Date and time of final extubation:</span></h6>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" #dp="bsDatepicker" bsDatepicker
+                              [(ngModel)]="reg.extubation" [bsConfig]="{ dateInputFormat: 'YYYY/MM/DD' }"
+                              name="datum_extubation" />
+                          </div>
+                          <div class="col-sm-3"><select [(ngModel)]="reg.extubation_hours" name="hos630"
+                              class="form-control">
+                              <option *ngFor="let an of optionsHours">{{ an }}</option>
+                            </select></div>
+                          <div class="col-sm-3"><select [(ngModel)]="reg.extubation_minutes" name="hos640"
+                              class="form-control">
+                              <option *ngFor="let an of optionsMinutes">{{ an }}</option>
+                            </select></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <h6><span class="badge badge-secondary">Date and time of discharge:</span></h6>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" #dp="bsDatepicker" bsDatepicker
+                              [(ngModel)]="reg.discharge" [bsConfig]="{ dateInputFormat: 'YYYY/MM/DD' }"
+                              name="datum_discharge" />
+                          </div>
+                          <div class="col-sm-3"><select [(ngModel)]="reg.discharge_hours" name="hos650"
+                              class="form-control">
+                              <option *ngFor="let an of optionsHours">{{ an }}</option>
+                            </select></div>
+                          <div class="col-sm-3"><select [(ngModel)]="reg.discharge_minutes" name="hos660"
+                              class="form-control">
+                              <option *ngFor="let an of optionsMinutes">{{ an }}</option>
+                            </select></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <h6><span class="badge badge-secondary">Discharge location:</span></h6>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row" *ngIf="reg.discharged_alive">
+                      <div class="col-sm-8">
+                        <select [(ngModel)]="reg.selected_discharge_location" name="hos670" class="form-control">
+                          <option *ngFor="let an of optionsDischargeLocation" [value]="an.value">{{ an.description }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                  </div>
+                  <div class="mt-2 mb-5" style="background-color: beige;" *ngIf="reg.selected_reason == 2">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <h6><span class="badge badge-secondary">If died on ECLS select reason:</span></h6>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <select [(ngModel)]="reg.selected_reason_death" name="hos680" class="form-control">
+                          <option *ngFor="let an of optionsReasonDeath" [value]="an.value">{{ an.description }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <img src="../assets/images/cardiohelp.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </tab>
+      </tabset>
+    </div>
+  </div>
+</div>
+<div class="card" *ngIf="showUploader()">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <app-hemo-uploader [id]="reg.id" (out)="uploadDone($event)"></app-hemo-uploader>
+  </div>
+  <div class="card-footer"></div>
+</div>
