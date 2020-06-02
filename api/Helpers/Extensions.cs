@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Cardiohelp.helpers
+namespace csd.helpers
 {
     public static class Extensions
     {

@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using Cardiohelp.helpers;
+using csd.helpers;
 
-namespace Cardiohelp.data.Interfaces
+namespace csd.data.Interfaces
 {
     public interface IUser
     {

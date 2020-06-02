@@ -1,6 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
-namespace Cardiohelp.data
+namespace csd.data
 {
 
     public class dataContext : DbContext

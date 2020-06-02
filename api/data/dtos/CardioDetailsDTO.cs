@@ -1,6 +1,6 @@
 using System;
 
-namespace Cardiohelp.data.dtos
+namespace csd.data.dtos
 {
     public class CardioDetailsDTO
     {

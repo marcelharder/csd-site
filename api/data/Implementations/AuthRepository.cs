@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
-using Cardiohelp.data.Interfaces;
+using csd.data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cardiohelp.data.Implementations{
+namespace csd.data.Implementations{
     public class AuthRepository : IAuthRepository
     {
          private readonly dataContext _context;

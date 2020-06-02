@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using Cardiohelp.data;
-using Cardiohelp.data.Models;
+using csd.data;
+using csd.data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Cardiohelp.Controllers
+namespace csd.Controllers
 {
     [ApiController]
     [Authorize]

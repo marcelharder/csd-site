@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\cardiohelp\\CardioHelp2.0\\api\\Cardiohelp.csproj": {}
+    "D:\\code\\csd-site-02\\csd\\api\\Cardiohelp.csproj": {}
   },
   "projects": {
-    "E:\\Code\\cardiohelp\\CardioHelp2.0\\api\\Cardiohelp.csproj": {
+    "D:\\code\\csd-site-02\\csd\\api\\Cardiohelp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\cardiohelp\\CardioHelp2.0\\api\\Cardiohelp.csproj",
+        "projectUniqueName": "D:\\code\\csd-site-02\\csd\\api\\Cardiohelp.csproj",
         "projectName": "Cardiohelp",
-        "projectPath": "E:\\Code\\cardiohelp\\CardioHelp2.0\\api\\Cardiohelp.csproj",
-        "packagesPath": "C:\\Users\\m_har\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\cardiohelp\\CardioHelp2.0\\api\\obj\\",
+        "projectPath": "D:\\code\\csd-site-02\\csd\\api\\Cardiohelp.csproj",
+        "packagesPath": "C:\\Users\\MSI-GL62\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\csd-site-02\\csd\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\m_har\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MSI-GL62\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Cardiohelp.data {
+namespace csd.data {
 public class User
 
     {

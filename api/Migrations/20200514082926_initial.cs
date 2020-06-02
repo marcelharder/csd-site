@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Cardiohelp.Migrations
+namespace csd.Migrations
 {
     public partial class initial : Migration
     {

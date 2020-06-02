@@ -1,4 +1,4 @@
-namespace Cardiohelp.data.dtos {
+namespace csd.data.dtos {
     public class CardioForReturn{
         public int Id { get; set; }
         public string center_id { get; set; }

@@ -1,4 +1,4 @@
-namespace Cardiohelp.helpers {
+namespace csd.helpers {
 
 public class UserParams 
     {

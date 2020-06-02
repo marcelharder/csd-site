@@ -3,7 +3,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
 import { NgModule } from '@angular/core';
-import {TimeAgoPipe} from 'time-ago-pipe';
 import {FileUploadModule} from 'ng2-file-upload';
 import {ChartsModule} from 'ng2-charts'
 import {GoogleChartsModule} from 'angular-google-charts';
@@ -36,10 +35,8 @@ import { UserService } from './_services/user.service';
 import { ValveResolver } from './_resolvers/ValveResolver';
 import { MessagesResolver } from './_resolvers/MessageResolver';
 import { ExpiringProductsResolver } from './_resolvers/ExpiringProductsResolver';
-import { ProfileComponent } from './profile/profile.component';
 import { ProfileResolver } from './_resolvers/ProfileResolver';
 import { PhotoEditorComponent } from './photo-uploader/photoEditor.component';
-import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { GraphService } from './_services/graph.service';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
@@ -63,13 +60,11 @@ export function tokenGetter() { return localStorage.getItem('token'); }
 
 @NgModule({
    declarations: [
-      TimeAgoPipe,
       AppComponent,
       HomeComponent,
       AboutComponent,
       NavMenuComponent,
       SettingsComponent,
-      ProfileComponent,
       PhotoEditorComponent,
       UsersComponent,
       LoginComponent,
@@ -127,7 +122,6 @@ export function tokenGetter() { return localStorage.getItem('token'); }
         MessagesResolver,
         RegistriesResolver,
         ExpiringProductsResolver,
-        PreventUnsavedChanges,
         ProfileResolver,
         GraphService,
         RegistryService

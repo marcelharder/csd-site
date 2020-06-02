@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Cardiohelp.data.dtos
+namespace csd.data.dtos
 {
     public class UserForRegister
     {

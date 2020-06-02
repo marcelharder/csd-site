@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using api.data.code;
+
 using AutoMapper;
-using Cardiohelp.data;
-using Cardiohelp.data.code;
-using Cardiohelp.data.Implementations;
-using Cardiohelp.data.Interfaces;
-using Cardiohelp.Mappings;
+using csd.data;
+using csd.data.code;
+using csd.data.Implementations;
+using csd.data.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -22,7 +21,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Cardiohelp
+namespace csd
 {
     public class Startup
     {
@@ -40,19 +39,16 @@ namespace Cardiohelp
             services.AddHttpContextAccessor();
             services.AddCors();
 
-            
+
 
             services.AddDbContext<dataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
-           // .EnableSensitiveDataLogging()
+            // .EnableSensitiveDataLogging()
             );
 
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IUser, UserRepository>();
-            services.AddScoped<ICardioRepository, CardioRepository>();
-            services.AddScoped<IHospitalRepository, HospitalRepository>();
             services.AddScoped<Dropdownlists>();
             services.AddScoped<SpecialMaps>();
-            services.AddScoped<CSVProducer>();
 
 
             //services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>(), AppDomain.CurrentDomain.GetAssemblies());
@@ -98,16 +94,20 @@ namespace Cardiohelp
 
             app.UseRouting();
             app.UseCors("CorsPolicy");
-            
+
 
 
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapFallbackToController("Index", "Fallback");
             });
         }
     }

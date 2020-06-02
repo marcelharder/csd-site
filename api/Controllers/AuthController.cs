@@ -3,14 +3,14 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Cardiohelp.data;
-using Cardiohelp.data.dtos;
-using Cardiohelp.data.Interfaces;
+using csd.data;
+using csd.data.dtos;
+using csd.data.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Cardiohelp.Controllers{
+namespace csd.Controllers{
     
     [Route("api/[controller]")]
     

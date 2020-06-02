@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Cardiohelp.data.Interfaces
+namespace csd.data.Interfaces
 {
     public interface IAuthRepository
     {

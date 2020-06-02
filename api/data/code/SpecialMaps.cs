@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using AutoMapper;
-using Cardiohelp.data.dtos;
-using Cardiohelp.data.Models;
-using Cardiohelp.helpers;
+using csd.data.dtos;
+using csd.data.Models;
+using csd.helpers;
 using Microsoft.AspNetCore.Http;
 
-namespace Cardiohelp.data.code
+namespace csd.data.code
 {
 
     public class SpecialMaps
@@ -47,38 +47,10 @@ namespace Cardiohelp.data.code
             return h;
         }
 
-        public List<CardioForReturn> mapToListOfmessageToReturnFromListOfMessageAsync(PagedList<Cardio> messagesFromRepo)
-        {
-            var help = new List<CardioForReturn>();
-            foreach (Cardio c in messagesFromRepo)
-            {
-                var d = new CardioForReturn();
-                d.Id = c.Id;
-                d.center_id = c.center_id;
-                d.cassette_id = c.cassette_id;
-                d.contributor_id = c.contributor_id;
-                d.indication = getIndication(c.indication);
-                d.patient_age = c.patient_age;
-                d.patient_gender = c.patient_gender;
-                d.registry_id = c.registry_id;
-                d.support_mode = c.support_mode;
-                d.time_supported = c.time_supported;
-                help.Add(d);
-            }
-            return help;
-        }
-        public CardioDetailsDTO mapToCardioDetails(Cardio c)
-        {
-            var help = new CardioDetailsDTO();
-            help = _map.Map<Cardio, CardioDetailsDTO>(c);
-            return help;
-        }
+       
+        
 
-        public Cardio mapToCardio(CardioDetailsDTO ctd)
-        {
-           
-            return _map.Map<CardioDetailsDTO, Cardio>(ctd);
-        }
+     
 
 
         public int getCurrentUserId()

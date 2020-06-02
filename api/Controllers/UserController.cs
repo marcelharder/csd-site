@@ -1,12 +1,12 @@
 using System.Threading.Tasks;
-using Cardiohelp.data;
-using Cardiohelp.data.code;
-using Cardiohelp.data.dtos;
-using Cardiohelp.data.Interfaces;
+using csd.data;
+using csd.data.code;
+using csd.data.dtos;
+using csd.data.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Cardiohelp.Controllers
+namespace csd.Controllers
 {
     [ApiController]
     [Authorize]

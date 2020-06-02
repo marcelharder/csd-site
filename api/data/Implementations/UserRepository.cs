@@ -1,10 +1,10 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Cardiohelp.data.Interfaces;
-using Cardiohelp.helpers;
+using csd.data.Interfaces;
+using csd.helpers;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cardiohelp.data.Implementations
+namespace csd.data.Implementations
 {
     public class UserRepository : IUser
     {
