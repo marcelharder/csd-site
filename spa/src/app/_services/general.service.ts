@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Hospital } from '../_models/Hospital';
+import { ContactMessage } from '../_models/contactMessage';
 
 @Injectable()
 export class GeneralService {
@@ -15,4 +16,10 @@ export class GeneralService {
     getCountryName(countryCode: string) { return this.http.get<string>(this.baseUrl + 'countryName/' + countryCode, { responseType: 'text' as 'json' }); }
     // tslint:disable-next-line: max-line-length
     getHospitalFromHospitalCode(code: number) {return this.http.get<string>(this.baseUrl + 'hospitalName/' + code, { responseType: 'text' as 'json' });}
+    sendMessage(cm: ContactMessage){return this.http.post<string>(this.baseUrl + 'receiveMessage', cm)}
+    
+
+
+
+
 }
