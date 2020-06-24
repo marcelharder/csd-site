@@ -39,6 +39,7 @@ namespace csd
             );
 
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IEmail, Mail>();
             services.AddScoped<IUser, UserRepository>();
             services.AddScoped<Dropdownlists>();
             services.AddScoped<SpecialMaps>();
@@ -93,14 +94,14 @@ namespace csd
             app.UseAuthentication();
             app.UseAuthorization();
 
-           // app.UseDefaultFiles();
-           // app.UseStaticFiles();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                //endpoints.MapFallbackToController("Index", "Fallback");
+                endpoints.MapFallbackToController("Index", "Fallback");
             });
         }
     }

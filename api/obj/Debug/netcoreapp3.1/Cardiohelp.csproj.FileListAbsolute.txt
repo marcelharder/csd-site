@@ -482,3 +482,7 @@ D:\code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.RazorTargetAsse
 D:\code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.csproj.CopyComplete
 D:\code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.dll
 D:\code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.pdb
+D:\code\csd-site\csd-site\api\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\code\csd-site\csd-site\api\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\code\csd-site\csd-site\api\bin\Debug\netcoreapp3.1\NETCore.MailKit.dll
+D:\code\csd-site\csd-site\api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll

@@ -17,7 +17,7 @@ export class OviComponent implements OnInit {
   showPresentatie(id: number) { window.open(this.baseUrl + 'getPDF/3'); }
   showDemo(id: number) {
     this.alertify.confirm('Your login credentials are: UN: marcel PWD: password',
-    () => { if (id === 1) { window.open('http://77.173.53.32:8047'); } })
+    () => { if (id === 1) { window.open('http://77.173.53.32:8045'); } })
   }
 
 }
