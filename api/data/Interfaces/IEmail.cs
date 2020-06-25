@@ -1,9 +1,10 @@
+using System.Threading.Tasks;
 using csd.data.Models;
 
 namespace csd.data.Interfaces
 {
     public interface IEmail
     {
-       void sendMail(ContactMessage cm);
+       Task sendMailAsync(ContactMessage cm);
     }
 }

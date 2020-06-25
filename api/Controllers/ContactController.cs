@@ -16,7 +16,7 @@ namespace csd.Controllers
         [HttpPost("api/receiveMessage")]
         public IActionResult rm(ContactMessage contactMessage)
         {
-          //  _mail.sendMail(contactMessage);
+            _mail.sendMailAsync(contactMessage);
             return Ok();
         }
 

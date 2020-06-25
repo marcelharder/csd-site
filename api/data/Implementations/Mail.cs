@@ -8,7 +8,7 @@ namespace csd.data.Implementations
 {
     public class Mail : IEmail
     {
-        public void sendMail(ContactMessage cm)
+        public async System.Threading.Tasks.Task sendMailAsync(ContactMessage cm)
         {
             MimeMessage message = new MimeMessage();
 
@@ -21,21 +21,37 @@ namespace csd.data.Implementations
             message.Subject = cm.subject + " request";
 
             BodyBuilder bb = new BodyBuilder();
-            bb.TextBody = "Our user at " + cm.workemail + "wrote the following " + cm.message;
+            bb.TextBody = "Our user at " + cm.workemail + " wrote the following " + cm.message;
 
             message.Body = bb.ToMessageBody();
 
-            SmtpClient client = new SmtpClient();
-            client.Connect("web16.foxxl.com",465,true);
-             
-           // client.Authenticate("lmztffifuhujwnwd",null);
-           client.Authenticate("postmaster@tds-nederland.nl","bKf2?8h8");
+            /*  SmtpClient client = new SmtpClient();
+
+            // client.Connect("smtp.gmail.com",587);
+            // client.Connect("web16.foxxl.com",465);
+             client.Connect("web16.foxxl.com",587);
+
+           //  client.Authenticate("lmztffifuhujwnwd",null);
+             client.Authenticate("postmaster@tds-nederland.nl","bKf2?8h8");
 
 
-            client.Send(message);
-            client.Disconnect(true);
-            client.Dispose();
-           
+             client.Send(message);
+             client.Disconnect(true);
+             client.Dispose(); */
+
+            using (var client = new SmtpClient())
+            {
+                client.ServerCertificateValidationCallback = (sender, certificate, chain, errors) => true;
+                client.AuthenticationMechanisms.Remove("XOAUTH2");
+
+                // Start of provider specific settings
+                await client.ConnectAsync("web16.foxxl.com", 587, false).ConfigureAwait(false);
+                await client.AuthenticateAsync("postmaster@tds-nederland.nl", "bKf2?8h8").ConfigureAwait(false);
+                // End of provider specific settings
+
+                await client.SendAsync(message).ConfigureAwait(false);
+                await client.DisconnectAsync(true).ConfigureAwait(false);
+            }
         }
     }
 }
