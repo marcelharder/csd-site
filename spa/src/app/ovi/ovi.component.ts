@@ -16,8 +16,17 @@ export class OviComponent implements OnInit {
   linkToCSD() { window.location.href = 'http://77.173.53.32:8046'; }
   showPresentatie(id: number) { window.open(this.baseUrl + 'getPDF/3'); }
   showDemo(id: number) {
-    this.alertify.confirm('Your login credentials are: UN: marcel PWD: password',
-    () => { if (id === 1) { window.open('http://77.173.53.32:8045'); } })
+
+
+    if(id === 1){ this.alertify.confirm('Your login credentials are: UN: demosuperuser PWD: password',
+    () => { window.open('http://77.173.53.32:8045');  })}
+
+    if(id === 2){ this.alertify.confirm('Your login credentials are: UN: demovendor PWD: password',
+    () => { window.open('http://77.173.53.32:8045');  })}
+
+
+
+
   }
 
 }
