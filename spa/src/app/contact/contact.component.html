@@ -14,30 +14,69 @@
           <div class="col-sm-4"></div>
         </div>
         <div class="row">
-          <div class="col-sm-4"><h5><span class="badge badge-info">3743 CP</span></h5></div>
+          <div class="col-sm-4"><h5><span class="badge badge-info">3743 CP  Baarn</span></h5></div>
           <div class="col-sm-4"></div>
           <div class="col-sm-4"></div>
         </div>
         <div class="row">
-          <div class="col-sm-4"><h5><span class="badge badge-info">Baarn The Netherlands</span></h5></div>
+          <div class="col-sm-4"><h5><span class="badge badge-info">The Netherlands</span></h5></div>
           <div class="col-sm-4"></div>
           <div class="col-sm-4"></div>
         </div>
-        <div class="row">
-          <div class="col-sm-4"><h5><span class="badge badge-info">Tel: +31 630167973</span></h5></div>
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4"><h5><span class="badge badge-info">Mail: marcelharder@protonmail.com</span></h5></div>
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
-        </div>
+       
       </div>
       <div class="card-footer"></div>
     </div>
   </div>
-  <div class="col-sm-6"></div>
+  <div class="col-sm-6">
+    <form #editForm="ngForm" (ngSubmit)="sendMessage()" id="editForm">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-sm-8"><h4><span class="badge badge-secondary">Contact Us</span></h4></div>
+          <div class="col-sm-4">
+            <button 
+            [disabled]="!editForm.dirty" 
+            class="btn btn-success btn-block" 
+            form="editForm" 
+            type="submit" 
+            class="btn btn-primary" 
+            style="float:right">Submit</button></div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-12"><h4><span class="badge badge-default">Work email</span></h4></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input [(ngModel)]="f.workemail" class="form-control" id="workemail" name="workemail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12"><h4><span class="badge badge-default">Subject</span></h4></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <select class="form-control" id="sel1" [(ngModel)]="f.subject" name="subject">
+              <option *ngFor="let item of subjectList">{{item.description}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12"><h4><span class="badge badge-default">Message</span></h4></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <textarea class="form-control" rows="5"  
+            [(ngModel)]="f.message" 
+            id="comment" name="message">
+          </textarea></div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
 </div>
 
   </div>

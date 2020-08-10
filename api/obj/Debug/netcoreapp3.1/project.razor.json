@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "FilePath": "c:\\Code\\csd-site\\csd-site\\api\\Cardiohelp.csproj",
+=======
+  "FilePath": "d:\\code\\csd-site\\api\\Cardiohelp.csproj",
+>>>>>>> 513b6e77a007915d1339a0e7d86873e673473002
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",

@@ -1,21 +1,29 @@
-import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AlertifyService } from '../_services/alertify.service';
+import { GeneralService } from '../_services/general.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: "app-soa",
-  templateUrl: "./soa.component.html",
-  styleUrls: ["./soa.component.css"],
+  selector: 'app-soa',
+  templateUrl: './soa.component.html',
+  styleUrls: ['./soa.component.css'],
 })
 export class SoaComponent implements OnInit {
-  constructor(private router: Router, private alertify: AlertifyService) {}
+  baseUrl = environment.apiUrl;
+  constructor(
+    private router: Router,
+    private alertify: AlertifyService,
+    private gen: GeneralService) {}
 
   ngOnInit(): void {}
-  linkToCSD() { window.location.href = "http://77.173.53.32:8046";}
+  linkToCSD() { window.location.href = 'http://77.173.53.32:8046';}
 
-  showPresentatie(id: number) { if (id === 1) { window.open("https://docs.google.com/presentation/d/1YOepKNN-2SqzUhFmkZjrpH10m_P_vIdO5ksp9o09xHk/edit?usp=sharing"); }}
+  showPresentatie(id: number) { window.open(this.baseUrl + 'getPDF/1');}
+
   showDemo(id: number) {
-    this.alertify.confirm("Your login credentials are: UN: marcel PWD: password", () => {if (id === 1) { window.open("http://77.173.53.32:8086"); }})
+    this.alertify.confirm('Your login credentials are: UN: marcel PWD: password',
+    () => {if (id === 1) { window.open('http://77.173.53.32:8086'); }})
  }
 
 }
