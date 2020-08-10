@@ -14,7 +14,19 @@ export class OviComponent implements OnInit {
 
   ngOnInit(): void {  }
   linkToCSD() { window.location.href = 'http://77.173.53.32:8046'; }
-  showPresentatie(id: number) { window.open(this.baseUrl + 'getPDF/3'); }
+
+
+  showPresentatie(id: number) {
+    
+    // window.open(this.baseUrl + 'getPDF/3');
+
+    window.open("https://docs.google.com/presentation/d/1mD0BFR3N2W7eoH5tpTn8tbb0AvqoOqcf6kp3CBDrKIk/edit?usp=sharing");
+  
+  }
+
+
+
+
   showDemo(id: number) {
 
 
