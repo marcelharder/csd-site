@@ -24,6 +24,9 @@ export class OviComponent implements OnInit {
     if(id === 2){ this.alertify.confirm('Your login credentials are: UN: demovendor PWD: password',
     () => { window.open('http://77.173.53.32:8045');  })}
 
+    if(id === 3){ this.alertify.confirm('Your login credentials are: UN: demosurgeon PWD: password',
+    () => { window.open('http://77.173.53.32:8045');  })}
+
 
 
 
