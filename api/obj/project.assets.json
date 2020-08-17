@@ -5215,11 +5215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\csd-site\\api\\Cardiohelp.csproj",
+      "projectUniqueName": "d:\\code\\csd-site\\api\\Cardiohelp.csproj",
       "projectName": "Cardiohelp",
-      "projectPath": "D:\\code\\csd-site\\api\\Cardiohelp.csproj",
+      "projectPath": "d:\\code\\csd-site\\api\\Cardiohelp.csproj",
       "packagesPath": "C:\\Users\\MSI-GL62\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\csd-site\\api\\obj\\",
+      "outputPath": "d:\\code\\csd-site\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

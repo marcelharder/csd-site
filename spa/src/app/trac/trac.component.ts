@@ -49,11 +49,12 @@ export class TracComponent implements OnInit {
     window.location.href = "http://77.173.53.32:8046";
   }
   showPresentatie(id: number) {
-    if (id === 1) {
+    window.open("https://docs.google.com/presentation/d/1e7kTDtSyxp51NOzL0CjG4oaE6zNQuu0I4kJ8xU2SSLE/edit?usp=sharing");
+    /* if (id === 1) {
       window.open("");
     } else {
       this.alertify.message("Under development, check back ...");
-    }
+    } */
   }
   showDemo(id: number) {
     this.alertify.confirm(
