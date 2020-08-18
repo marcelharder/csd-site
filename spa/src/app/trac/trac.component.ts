@@ -46,10 +46,10 @@ export class TracComponent implements OnInit {
     this.page = no;
   }
   linkToCSD() {
-    window.location.href = "http://77.173.53.32:8046";
+    window.location.href = 'http://77.173.53.32:8046';
   }
   showPresentatie(id: number) {
-    window.open("https://docs.google.com/presentation/d/1e7kTDtSyxp51NOzL0CjG4oaE6zNQuu0I4kJ8xU2SSLE/edit?usp=sharing");
+    window.open('https://docs.google.com/presentation/d/1e7kTDtSyxp51NOzL0CjG4oaE6zNQuu0I4kJ8xU2SSLE/edit?usp=sharing');
     /* if (id === 1) {
       window.open("");
     } else {
@@ -58,10 +58,10 @@ export class TracComponent implements OnInit {
   }
   showDemo(id: number) {
     this.alertify.confirm(
-      "Your login credentials are: UN: marcel PWD: password",
+      'Your login credentials are: UN: m.p. harder PWD: mph@123',
       () => {
         if (id === 1) {
-          window.open("http://77.173.53.32:8088");
+          window.open('http://77.173.53.32:8088');
         }
       }
     );

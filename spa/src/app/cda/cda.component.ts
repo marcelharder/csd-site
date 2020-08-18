@@ -20,7 +20,7 @@ export class CdaComponent implements OnInit {
     window.open("https://docs.google.com/presentation/d/1Tg86Gr3_ubZL-O8ev137nRNmt0Lj63vc9MOO8mCrAmI/edit?usp=sharing");
     }
   showDemo(id: number) {
-    this.alertify.confirm('Your login credentials are: UN: marcel PWD: password',
+    this.alertify.confirm('Your login credentials are: UN: demo PWD: password',
       () => { if (id === 1) { window.open('http://77.173.53.32:8047'); } })
   }
 }

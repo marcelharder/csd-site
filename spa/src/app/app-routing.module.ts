@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { LoginComponent } from './login/login.component';
-import { ListOfRegistriesComponent } from './list-of-registries/list-of-registries.component';
 import { RegistriesResolver } from './_resolvers/RegistriesResolver';
 import { UsersComponent } from './users/users.component';
 import { ContactComponent } from './contact/contact.component';
@@ -31,7 +30,6 @@ const routes: Routes = [
     runGuardsAndResolvers: 'always',
     canActivate: [AuthGuard],
     children: [
-    { path: 'listOfRegistries', component: ListOfRegistriesComponent, resolve: {reg: RegistriesResolver}},
 
     { path: 'users', component: UsersComponent },
 

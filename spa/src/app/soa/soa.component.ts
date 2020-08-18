@@ -19,13 +19,13 @@ export class SoaComponent implements OnInit {
   ngOnInit(): void {}
   linkToCSD() { window.location.href = 'http://77.173.53.32:8046';}
 
-  showPresentatie(id: number) { 
-    //window.open(this.baseUrl + 'getPDF/1');
-    window.open("https://docs.google.com/presentation/d/1vGzApLXgRND9iEnoPrPLwOggLpljfrr-S5sfr6XRu6M/edit?usp=sharing");
+  showPresentatie(id: number) {
+    // window.open(this.baseUrl + 'getPDF/1');
+    window.open('https://docs.google.com/presentation/d/1vGzApLXgRND9iEnoPrPLwOggLpljfrr-S5sfr6XRu6M/edit?usp=sharing');
   }
 
   showDemo(id: number) {
-    this.alertify.confirm('Your login credentials are: UN: marcel PWD: password',
+    this.alertify.confirm('Your login credentials are: UN: demo PWD: password',
     () => {if (id === 1) { window.open('http://77.173.53.32:8086'); }})
  }
 

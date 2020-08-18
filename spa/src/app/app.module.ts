@@ -40,7 +40,6 @@ import { PhotoEditorComponent } from './photo-uploader/photoEditor.component';
 import { GraphService } from './_services/graph.service';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
-import { ListOfRegistriesComponent } from './list-of-registries/list-of-registries.component';
 import { RegistriesResolver } from './_resolvers/RegistriesResolver';
 import { RegistryService } from './_services/registry.service';
 import { MyLineChartComponent } from './_charts/my-line-chart/my-line-chart.component';
@@ -56,7 +55,7 @@ import { TracComponent } from './trac/trac.component';
 import { EchoComponent } from './echo/echo.component';
 
 
-export function tokenGetter() { return localStorage.getItem('token'); }
+export function tokenG() { return localStorage.getItem('token'); }
 
 @NgModule({
    declarations: [
@@ -68,7 +67,6 @@ export function tokenGetter() { return localStorage.getItem('token'); }
       PhotoEditorComponent,
       UsersComponent,
       LoginComponent,
-      ListOfRegistriesComponent,
       MyLineChartComponent,
       PwpChartComponent,
       PapChartComponent,
@@ -100,7 +98,7 @@ export function tokenGetter() { return localStorage.getItem('token'); }
       BsDatepickerModule.forRoot(),
       JwtModule.forRoot({
          config: {
-             tokenGetter: tokenGetter,
+             tokenGetter: tokenG,
              whitelistedDomains: ['localhost:5000'],
              blacklistedRoutes: ['localhost:5000/api/auth']
          }

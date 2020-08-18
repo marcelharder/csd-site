@@ -25,21 +25,7 @@ namespace csd.data.Implementations
 
             message.Body = bb.ToMessageBody();
 
-            /*  SmtpClient client = new SmtpClient();
-
-            // client.Connect("smtp.gmail.com",587);
-            // client.Connect("web16.foxxl.com",465);
-             client.Connect("web16.foxxl.com",587);
-
-           //  client.Authenticate("lmztffifuhujwnwd",null);
-             client.Authenticate("postmaster@tds-nederland.nl","bKf2?8h8");
-
-
-             client.Send(message);
-             client.Disconnect(true);
-             client.Dispose(); */
-
-            using (var client = new SmtpClient())
+           using (var client = new SmtpClient())
             {
                 client.ServerCertificateValidationCallback = (sender, certificate, chain, errors) => true;
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
