@@ -1,15 +1,19 @@
-import { Component, OnInit } from "@angular/core";
-import { AlertifyService } from "../_services/alertify.service";
+import { Component, OnInit } from '@angular/core';
+import { AlertifyService } from '../_services/alertify.service';
+import { GeneralService } from '../_services/general.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: "app-trac",
-  templateUrl: "./trac.component.html",
-  styleUrls: ["./trac.component.css"],
+  selector: 'app-trac',
+  templateUrl: './trac.component.html',
+  styleUrls: ['./trac.component.css'],
 })
 export class TracComponent implements OnInit {
   page = 1;
+  presentationUrl='';
+  csdUrl = environment.csdUrl;
 
-  constructor(private alertify: AlertifyService) {}
+  constructor(private alertify: AlertifyService, private gen:GeneralService) {}
 
   ngOnInit(): void {}
 
@@ -42,19 +46,12 @@ export class TracComponent implements OnInit {
     return false;
   }
 
-  displayPage(no: number) {
-    this.page = no;
-  }
-  linkToCSD() {
-    window.location.href = 'http://77.173.53.32:8046';
-  }
+  displayPage(no: number) { this.page = no; }
+
+  linkToCSD() { window.location.href = this.csdUrl; }
+
   showPresentatie(id: number) {
-    window.open('https://docs.google.com/presentation/d/1e7kTDtSyxp51NOzL0CjG4oaE6zNQuu0I4kJ8xU2SSLE/edit?usp=sharing');
-    /* if (id === 1) {
-      window.open("");
-    } else {
-      this.alertify.message("Under development, check back ...");
-    } */
+    this.gen.getPresentationUrl('trac').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
   }
   showDemo(id: number) {
     this.alertify.confirm(

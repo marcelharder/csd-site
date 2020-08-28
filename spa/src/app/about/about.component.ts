@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about',
@@ -6,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
+  csdUrl = environment.csdUrl;
   constructor() { }
 
   ngOnInit() {
   }
 
-  linkToCSD() { window.location.href = "http://77.173.53.32:8046"; }
+  linkToCSD() { window.location.href = this.csdUrl; }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-echo',
@@ -6,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./echo.component.css']
 })
 export class EchoComponent implements OnInit {
-
+csdUrl = environment.csdUrl;
   constructor() { }
 
-  ngOnInit(): void {
-  }
-  linkToCSD() { window.location.href = "http://77.173.53.32:8046"; }
+  ngOnInit(): void {  }
 
+  linkToCSD() { window.location.href = this.csdUrl; }
 }

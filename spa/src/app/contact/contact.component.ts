@@ -4,6 +4,7 @@ import { GeneralService } from '../_services/general.service';
 import { AlertifyService } from '../_services/alertify.service';
 import { NgForm } from '@angular/forms';
 import { ContactMessage } from '../_models/contactMessage';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +15,7 @@ export class ContactComponent implements OnInit {
   @ViewChild('editForm') editForm: NgForm;
   subjectList: Array<DropItem> = [];
   f: ContactMessage = { workemail: '', subject: 'Support', message: '' };
+  csdUrl = environment.csdUrl;
 
   constructor(private gen: GeneralService, private alertify: AlertifyService) { }
 
@@ -25,8 +27,7 @@ export class ContactComponent implements OnInit {
     this.subjectList.push({ value: 4, description: 'Other queries' });
 
   }
-
-  linkToCSD() { window.location.href = 'http://77.173.53.32:8046'; }
+  linkToCSD() { window.location.href = this.csdUrl; }
 
   sendMessage() {
     if (this.canIproceed()) {

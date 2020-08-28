@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertifyService } from '../_services/alertify.service';
 import { environment } from 'src/environments/environment';
+import { GeneralService } from '../_services/general.service';
 
 @Component({
   selector: 'app-ovi',
@@ -9,20 +10,19 @@ import { environment } from 'src/environments/environment';
 })
 export class OviComponent implements OnInit {
   baseUrl = environment.apiUrl;
+  presentationUrl = '';
+  csdUrl = environment.csdUrl;
 
-  constructor(private alertify: AlertifyService) { }
+  constructor(private alertify: AlertifyService, private gen: GeneralService) { }
 
   ngOnInit(): void {  }
-  linkToCSD() { window.location.href = 'http://77.173.53.32:8046'; }
+  linkToCSD() { window.location.href = this.csdUrl; }
 
 
   showPresentatie(id: number) {
-    
     // window.open(this.baseUrl + 'getPDF/3');
-
-    window.open("https://docs.google.com/presentation/d/1mD0BFR3N2W7eoH5tpTn8tbb0AvqoOqcf6kp3CBDrKIk/edit?usp=sharing");
-  
-  }
+     this.gen.getPresentationUrl('ovi').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
+   }
 
 
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,12 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+csdUrl = environment.csdUrl;
   constructor(private auth: AuthService) { }
 
   ngOnInit() { if (this.auth.decodedToken === undefined) {localStorage.removeItem('token'); }  }
 
-  linkToCSD() { window.location.href = "http://77.173.53.32:8046"; }
+  linkToCSD() { window.location.href = this.csdUrl; }
 }
 
 

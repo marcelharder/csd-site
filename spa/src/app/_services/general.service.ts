@@ -17,9 +17,6 @@ export class GeneralService {
     // tslint:disable-next-line: max-line-length
     getHospitalFromHospitalCode(code: number) {return this.http.get<string>(this.baseUrl + 'hospitalName/' + code, { responseType: 'text' as 'json' });}
     sendMessage(cm: ContactMessage){return this.http.post<string>(this.baseUrl + 'receiveMessage', cm)}
-    
-
-
-
-
+    // tslint:disable-next-line: max-line-length
+    getPresentationUrl(soort:string){return this.http.get<string>(this.baseUrl + 'presentation/' + soort, { responseType: 'text' as 'json' })}
 }

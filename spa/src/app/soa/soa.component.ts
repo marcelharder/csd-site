@@ -11,17 +11,19 @@ import { environment } from 'src/environments/environment';
 })
 export class SoaComponent implements OnInit {
   baseUrl = environment.apiUrl;
+  presentationUrl = '';
+  csdUrl = environment.csdUrl;
   constructor(
     private router: Router,
     private alertify: AlertifyService,
     private gen: GeneralService) {}
 
   ngOnInit(): void {}
-  linkToCSD() { window.location.href = 'http://77.173.53.32:8046';}
+  linkToCSD() { window.location.href = this.csdUrl; }
 
   showPresentatie(id: number) {
     // window.open(this.baseUrl + 'getPDF/1');
-    window.open('https://docs.google.com/presentation/d/1vGzApLXgRND9iEnoPrPLwOggLpljfrr-S5sfr6XRu6M/edit?usp=sharing');
+     this.gen.getPresentationUrl('soa').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
   }
 
   showDemo(id: number) {
