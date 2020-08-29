@@ -291,3 +291,4 @@ C:\Code\csd-site\csd-site\api\obj\Release\netcoreapp3.1\Cardiohelp.dll
 C:\Code\csd-site\csd-site\api\obj\Release\netcoreapp3.1\Cardiohelp.pdb
 C:\Code\csd-site\csd-site\api\obj\Release\netcoreapp3.1\Cardiohelp.genruntimeconfig.cache
 >>>>>>> Stashed changes
+C:\Code\csd-site\csd-site\api\bin\Release\netcoreapp3.1\package-lock.json

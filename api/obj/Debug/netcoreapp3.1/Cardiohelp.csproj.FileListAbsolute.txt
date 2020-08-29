@@ -637,3 +637,4 @@ C:\Code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.dll
 C:\Code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.pdb
 C:\Code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.genruntimeconfig.cache
 >>>>>>> 134ad226a5022e4d14bbfb97d1f8585aeabfdb5b
+C:\Code\csd-site\csd-site\api\bin\Debug\netcoreapp3.1\package-lock.json
