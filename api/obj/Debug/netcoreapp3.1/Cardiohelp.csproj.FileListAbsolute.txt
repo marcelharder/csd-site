@@ -637,6 +637,7 @@ C:\Code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.dll
 C:\Code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.pdb
 C:\Code\csd-site\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.genruntimeconfig.cache
 >>>>>>> 134ad226a5022e4d14bbfb97d1f8585aeabfdb5b
+<<<<<<< HEAD
 C:\Code\CSD-Site\api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Code\CSD-Site\api\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Code\CSD-Site\api\bin\Debug\netcoreapp3.1\Cardiohelp.exe
@@ -712,3 +713,6 @@ C:\Code\CSD-Site\api\obj\Debug\netcoreapp3.1\staticwebassets\Cardiohelp.StaticWe
 C:\Code\CSD-Site\api\obj\Debug\netcoreapp3.1\Cardiohelp.dll
 C:\Code\CSD-Site\api\obj\Debug\netcoreapp3.1\Cardiohelp.pdb
 C:\Code\CSD-Site\api\obj\Debug\netcoreapp3.1\Cardiohelp.genruntimeconfig.cache
+=======
+C:\Code\csd-site\csd-site\api\bin\Debug\netcoreapp3.1\package-lock.json
+>>>>>>> 38ce1487ea95d26b3be651c63ca4f978aff1caef
