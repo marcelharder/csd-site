@@ -1,5 +1,5 @@
 export const environment = {
   apiUrl: 'api/',
-  csdUrl: 'http://77.173.53.32:8046',
+  configUrl: 'http://77.173.53.32:8084/api/',
   production: true
 };

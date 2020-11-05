@@ -10,14 +10,14 @@ import { GeneralService } from '../_services/general.service';
 })
 export class CdaComponent implements OnInit {
   baseUrl = environment.apiUrl;
-  csdUrl = environment.csdUrl;
+  
   presentationUrl = '';
 
   constructor(private alertify: AlertifyService, private gen:GeneralService) { }
 
   ngOnInit(): void {
   }
-  linkToCSD() { window.location.href = this.csdUrl; }
+ 
 
   showPresentatie(id: number) 
   {

@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\csd-site\\api\\Cardiohelp.csproj": {}
+    "C:\\Code\\CSD-Site\\api\\Cardiohelp.csproj": {}
   },
   "projects": {
-    "D:\\code\\csd-site\\api\\Cardiohelp.csproj": {
+    "C:\\Code\\CSD-Site\\api\\Cardiohelp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\csd-site\\api\\Cardiohelp.csproj",
+        "projectUniqueName": "C:\\Code\\CSD-Site\\api\\Cardiohelp.csproj",
         "projectName": "Cardiohelp",
-        "projectPath": "D:\\code\\csd-site\\api\\Cardiohelp.csproj",
-        "packagesPath": "C:\\Users\\MSI-GL62\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\csd-site\\api\\obj\\",
+        "projectPath": "C:\\Code\\CSD-Site\\api\\Cardiohelp.csproj",
+        "packagesPath": "C:\\Users\\m_har\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\CSD-Site\\api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MSI-GL62\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\m_har\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -96,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

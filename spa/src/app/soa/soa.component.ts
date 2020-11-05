@@ -12,14 +12,12 @@ import { environment } from 'src/environments/environment';
 export class SoaComponent implements OnInit {
   baseUrl = environment.apiUrl;
   presentationUrl = '';
-  csdUrl = environment.csdUrl;
   constructor(
     private router: Router,
     private alertify: AlertifyService,
     private gen: GeneralService) {}
 
   ngOnInit(): void {}
-  linkToCSD() { window.location.href = this.csdUrl; }
 
   showPresentatie(id: number) {
     // window.open(this.baseUrl + 'getPDF/1');

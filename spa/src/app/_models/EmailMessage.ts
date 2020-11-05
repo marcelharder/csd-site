@@ -1,14 +1,12 @@
 export interface EmailMessage {
-    'Id': number;
-    'senderId': number;
-    'senderKnownAs': string;
-    'senderPhotoUrl': string;
-    'recipientId': number;
-    'recipientKnownAs': string;
-    'recipientPhotoUrl': string;
-    'content': string;
-    'isRead': boolean;
-    'dateRead': Date;
-    'messageSent': Date;
+  from: string;
+  to: string;
+  subject: string;
+  body: string;
+  surgeon: string;
+  surgeonImage: string;
+  textFragments: string[];
+  phone: string;
+  soort: string;
 
   }

@@ -7,12 +7,12 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  csdUrl = environment.csdUrl;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  linkToCSD() { window.location.href = this.csdUrl; }
+ 
 
 }

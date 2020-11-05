@@ -11,7 +11,6 @@ import { environment } from 'src/environments/environment';
 export class TracComponent implements OnInit {
   page = 1;
   presentationUrl='';
-  csdUrl = environment.csdUrl;
 
   constructor(private alertify: AlertifyService, private gen:GeneralService) {}
 
@@ -47,8 +46,6 @@ export class TracComponent implements OnInit {
   }
 
   displayPage(no: number) { this.page = no; }
-
-  linkToCSD() { window.location.href = this.csdUrl; }
 
   showPresentatie(id: number) {
     this.gen.getPresentationUrl('trac').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })

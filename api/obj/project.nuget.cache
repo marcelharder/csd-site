@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XSmfw1Iy8I2HNETZN8dP3Q2xA4TqDvV+EKXH6oOgxy8bk/TrAQvmTofHCievhT+JZ4F3d8uzycJ2N7A41BXLRA==",
+  "dgSpecHash": "2xJquBbEYkkGWMZIoIM8MBr4mVz9rJQCFHkeMbP4NMpqW5zIuikPrB0IiqC6j5fW1g13TXJUoS9JiSR0vgGjJQ==",
   "success": true,
-  "projectFilePath": "C:\\Code\\csd-site\\csd-site\\api\\Cardiohelp.csproj",
+  "projectFilePath": "C:\\Code\\CSD-Site\\api\\Cardiohelp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m_har\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\m_har\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

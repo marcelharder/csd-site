@@ -46,14 +46,6 @@
       </div>
       <div class="card-body">
         <div class="row">
-          <div class="col-sm-12"><h4><span class="badge badge-default">Work email</span></h4></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <input [(ngModel)]="f.workemail" class="form-control" id="workemail" name="workemail">
-          </div>
-        </div>
-        <div class="row">
           <div class="col-sm-12"><h4><span class="badge badge-default">Subject</span></h4></div>
         </div>
         <div class="row">
@@ -69,9 +61,12 @@
         <div class="row">
           <div class="col-sm-12">
             <textarea class="form-control" rows="5"  
-            [(ngModel)]="f.message" 
+            [(ngModel)]="f.body" 
             id="comment" name="message">
           </textarea></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12"><h5><span class="badge badge-warning">Please mention your email or phone</span></h5></div>
         </div>
       </div>
     </div>
@@ -81,7 +76,7 @@
 
   </div>
   <div class="card-footer">
-    <p>&copy; 2020 - CardiacSoftwareDevelopers(<a (click)="linkToCSD()">CSD</a>)</p>
+  
   </div>
 </div>
 

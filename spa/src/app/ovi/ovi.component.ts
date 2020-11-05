@@ -11,12 +11,11 @@ import { GeneralService } from '../_services/general.service';
 export class OviComponent implements OnInit {
   baseUrl = environment.apiUrl;
   presentationUrl = '';
-  csdUrl = environment.csdUrl;
 
   constructor(private alertify: AlertifyService, private gen: GeneralService) { }
 
   ngOnInit(): void {  }
-  linkToCSD() { window.location.href = this.csdUrl; }
+  
 
 
   showPresentatie(id: number) {

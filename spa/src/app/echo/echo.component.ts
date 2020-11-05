@@ -7,10 +7,10 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./echo.component.css']
 })
 export class EchoComponent implements OnInit {
-csdUrl = environment.csdUrl;
+
   constructor() { }
 
   ngOnInit(): void {  }
 
-  linkToCSD() { window.location.href = this.csdUrl; }
+ 
 }

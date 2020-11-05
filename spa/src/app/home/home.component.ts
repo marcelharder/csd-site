@@ -8,12 +8,12 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-csdUrl = environment.csdUrl;
+
   constructor(private auth: AuthService) { }
 
   ngOnInit() { if (this.auth.decodedToken === undefined) {localStorage.removeItem('token'); }  }
 
-  linkToCSD() { window.location.href = this.csdUrl; }
+  
 }
 
 
