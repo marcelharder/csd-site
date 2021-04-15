@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DropItem } from '../_models/DropItem';
+import { DropItem } from '../_models/dropItem';
 import { GeneralService } from '../_services/general.service';
 import { AlertifyService } from '../_services/alertify.service';
 import { NgForm } from '@angular/forms';

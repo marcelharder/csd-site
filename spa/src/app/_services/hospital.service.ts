@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Hospital } from '../_models/Hospital';
-import { DropItem } from '../_models/DropItem';
+import { DropItem } from '../_models/dropItem';
 
 @Injectable()
 export class HospitalService {

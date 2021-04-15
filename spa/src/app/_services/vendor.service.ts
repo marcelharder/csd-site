@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Vendor } from '../_models/Vendor';
-import { DropItem } from '../_models/DropItem';
+import { DropItem } from '../_models/dropItem';
 import { TypeOfValve } from '../_models/TypeOfValve';
 
 @Injectable()

@@ -10,8 +10,8 @@ import { Photo } from '../_models/Photo';
 
 @Component({
   selector: 'app-photo-editor',
-  templateUrl: './PhotoEditor.component.html',
-  styleUrls: ['./PhotoEditor.component.css']
+  templateUrl: './photoEditor.component.html',
+  styleUrls: ['./photoEditor.component.css']
 })
 export class PhotoEditorComponent implements OnInit {
   @Input() photos: Photo[];
