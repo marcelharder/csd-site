@@ -29,4 +29,6 @@ export class SoaComponent implements OnInit {
     () => {if (id === 1) { window.open('http://77.173.53.32:8086'); }})
  }
 
+ showVideo(){  this.router.navigate(['/tutorials/' + 1]);}
+
 }

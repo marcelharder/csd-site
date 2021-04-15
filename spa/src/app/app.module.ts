@@ -53,12 +53,13 @@ import { OviComponent } from './ovi/ovi.component';
 import { CdaComponent } from './cda/cda.component';
 import { TracComponent } from './trac/trac.component';
 import { EchoComponent } from './echo/echo.component';
+import { TutorialsComponent } from './tutorials/tutorials.component';
 
 
 export function tokenG() { return localStorage.getItem('token'); }
 
 @NgModule({
-   declarations: [
+   declarations: [	
       AppComponent,
       HomeComponent,
       AboutComponent,
@@ -78,7 +79,7 @@ export function tokenG() { return localStorage.getItem('token'); }
       CdaComponent,
       TracComponent,
       EchoComponent,
-
+      TutorialsComponent
    ],
    imports: [
       CommonModule,

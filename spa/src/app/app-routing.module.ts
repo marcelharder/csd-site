@@ -13,6 +13,7 @@ import { OviComponent } from './ovi/ovi.component';
 import { CdaComponent } from './cda/cda.component';
 import { TracComponent } from './trac/trac.component';
 import { EchoComponent } from './echo/echo.component';
+import { TutorialsComponent } from './tutorials/tutorials.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'trac', component: TracComponent },
   { path: 'echo', component: EchoComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'tutorials/:id', component: TutorialsComponent },
   {
     path: '',
     runGuardsAndResolvers: 'always',
