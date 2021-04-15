@@ -26,7 +26,7 @@ export class SoaComponent implements OnInit {
 
   showDemo(id: number) {
     this.alertify.confirm('Your login credentials are: UN: demo PWD: password',
-    () => {if (id === 1) { window.open('http://77.173.53.32:8086'); }})
+    () => {if (id === 1) { window.open('http://77.163.193.248:8086'); }})
  }
 
  showVideo(){  this.router.navigate(['/tutorials/' + 1]);}

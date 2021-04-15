@@ -20,6 +20,6 @@ export class WaitlistComponent implements OnInit {
    this.gen.getPresentationUrl('wait').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
   }
 
-  showDemo(id: number) { window.open('http://77.173.53.32:8083');}
+  showDemo(id: number) { window.open('http://77.163.193.248:8083');}
 
 }

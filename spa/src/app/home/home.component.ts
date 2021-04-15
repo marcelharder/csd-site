@@ -9,11 +9,17 @@ import { environment } from 'src/environments/environment';
 })
 export class HomeComponent implements OnInit {
 
+  currentYear = 0;
+
   constructor(private auth: AuthService) { }
 
-  ngOnInit() { if (this.auth.decodedToken === undefined) {localStorage.removeItem('token'); }  }
+  ngOnInit() {
+    if (this.auth.decodedToken === undefined) { localStorage.removeItem('token'); }
+    this.currentYear = new Date().getFullYear();
 
-  
+  }
+
+
 }
 
 
