@@ -10,18 +10,14 @@ import { GeneralService } from '../_services/general.service';
 })
 export class OviComponent implements OnInit {
   baseUrl = environment.apiUrl;
-  presentationUrl = '';
+  presentationUrl = 'https://docs.google.com/presentation/d/1mD0BFR3N2W7eoH5tpTn8tbb0AvqoOqcf6kp3CBDrKIk/edit?usp=sharing';
 
   constructor(private alertify: AlertifyService, private gen: GeneralService) { }
 
   ngOnInit(): void {  }
   
 
-
-  showPresentatie(id: number) {
-    // window.open(this.baseUrl + 'getPDF/3');
-     this.gen.getPresentationUrl('ovi').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
-   }
+  showPresentatie(id: number) {   window.open(this.presentationUrl); }
 
 
 

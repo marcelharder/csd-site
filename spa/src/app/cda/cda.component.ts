@@ -11,19 +11,14 @@ import { GeneralService } from '../_services/general.service';
 export class CdaComponent implements OnInit {
   baseUrl = environment.apiUrl;
   
-  presentationUrl = '';
+  presentationUrl = 'https://docs.google.com/presentation/d/1Tg86Gr3_ubZL-O8ev137nRNmt0Lj63vc9MOO8mCrAmI/edit?usp=sharing';
 
   constructor(private alertify: AlertifyService, private gen:GeneralService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
  
 
-  showPresentatie(id: number) 
-  {
-    // window.open(this.baseUrl + 'getPDF/4');
-    this.gen.getPresentationUrl('cda').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
-  }
+  showPresentatie(id: number) {   window.open(this.presentationUrl); }
 
   showDemo(id: number) {
     this.alertify.confirm('Your login credentials are: UN: demo PWD: password',

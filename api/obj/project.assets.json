@@ -5247,11 +5247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/megan/Code/csd-website/csd-site/api/Cardiohelp.csproj",
+      "projectUniqueName": "/home/megan/Code/site-02/csd-site/api/Cardiohelp.csproj",
       "projectName": "Cardiohelp",
-      "projectPath": "/home/megan/Code/csd-website/csd-site/api/Cardiohelp.csproj",
+      "projectPath": "/home/megan/Code/site-02/csd-site/api/Cardiohelp.csproj",
       "packagesPath": "/home/megan/.nuget/packages/",
-      "outputPath": "/home/megan/Code/csd-website/csd-site/api/obj/",
+      "outputPath": "/home/megan/Code/site-02/csd-site/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/megan/.nuget/NuGet/NuGet.Config"

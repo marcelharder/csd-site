@@ -10,15 +10,12 @@ import { GeneralService } from '../_services/general.service';
 })
 export class WaitlistComponent implements OnInit {
   baseUrl = environment.apiUrl;
-  presentationUrl = '';
+  presentationUrl = 'https://docs.google.com/presentation/d/1qTv-7DT9ARw_OpeTSoWx1nfmm6Nxc2FLRSDk6c3jcJU/edit?usp=sharing';
   constructor(private alertify: AlertifyService, private gen: GeneralService) { }
 
   ngOnInit(): void {  }
 
-  showPresentatie(id: number) {
-   // window.open(this.baseUrl + 'getPDF/2');
-   this.gen.getPresentationUrl('wait').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
-  }
+  showPresentatie(id: number) {   window.open(this.presentationUrl); }
 
   showDemo(id: number) { window.open('http://77.163.193.248:8083');}
 

@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SoaComponent implements OnInit {
   baseUrl = environment.apiUrl;
-  presentationUrl = '';
+  presentationUrl = 'https://docs.google.com/presentation/d/1vGzApLXgRND9iEnoPrPLwOggLpljfrr-S5sfr6XRu6M/edit?usp=sharing';
   constructor(
     private router: Router,
     private alertify: AlertifyService,
@@ -20,8 +20,13 @@ export class SoaComponent implements OnInit {
   ngOnInit(): void {}
 
   showPresentatie(id: number) {
-    // window.open(this.baseUrl + 'getPDF/1');
-     this.gen.getPresentationUrl('soa').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
+    window.open(this.presentationUrl);
+   /*   this.gen.getPresentationUrl('soa').subscribe((next)=>{ 
+       this.presentationUrl = next;  window.open(this.presentationUrl); })
+    */ 
+
+
+
   }
 
   showDemo(id: number) {
