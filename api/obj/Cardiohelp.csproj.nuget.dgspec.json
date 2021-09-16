@@ -1,33 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\csd-website-2\\csd-site\\api\\Cardiohelp.csproj": {}
+    "/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj": {}
   },
   "projects": {
-    "E:\\Code\\csd-website-2\\csd-site\\api\\Cardiohelp.csproj": {
+    "/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\csd-website-2\\csd-site\\api\\Cardiohelp.csproj",
+        "projectUniqueName": "/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
         "projectName": "Cardiohelp",
-        "projectPath": "E:\\Code\\csd-website-2\\csd-site\\api\\Cardiohelp.csproj",
-        "packagesPath": "C:\\Users\\m_har\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\csd-website-2\\csd-site\\api\\obj\\",
+        "projectPath": "/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
+        "packagesPath": "/home/marcelharder/.nuget/packages/",
+        "outputPath": "/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\m_har\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/marcelharder/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "netcoreapp5.0",
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -38,8 +34,7 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "netcoreapp5.0",
+        "netcoreapp3.1": {
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -96,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.118/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -77,80 +77,154 @@
 /home/megan/Code/csd-website/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.dll
 /home/megan/Code/csd-website/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.pdb
 /home/megan/Code/csd-website/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.genruntimeconfig.cache
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\appsettings.Development.json
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\appsettings.json
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\package-lock.json
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Cardiohelp.exe
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Cardiohelp.deps.json
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Cardiohelp.runtimeconfig.json
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Cardiohelp.runtimeconfig.dev.json
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Cardiohelp.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Cardiohelp.pdb
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\AutoMapper.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\MailKit.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\MimeKit.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\NETCore.MailKit.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
-E:\Code\csd-website-2\csd-site\api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.csprojAssemblyReference.cache
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.AssemblyInfoInputs.cache
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.AssemblyInfo.cs
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.csproj.CoreCompileInputs.cache
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.MvcApplicationPartsAssemblyInfo.cache
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\staticwebassets\Cardiohelp.StaticWebAssets.Manifest.cache
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\staticwebassets\Cardiohelp.StaticWebAssets.xml
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\scopedcss\bundle\Cardiohelp.styles.css
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.RazorTargetAssemblyInfo.cache
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.csproj.CopyComplete
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.dll
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.pdb
-E:\Code\csd-website-2\csd-site\api\obj\Debug\netcoreapp3.1\Cardiohelp.genruntimeconfig.cache
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/appsettings.Development.json
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/appsettings.json
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/package-lock.json
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.exe
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.deps.json
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.runtimeconfig.json
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.runtimeconfig.dev.json
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.pdb
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/AutoMapper.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/MailKit.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/MimeKit.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/NETCore.MailKit.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+E:/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csprojAssemblyReference.cache
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.AssemblyInfoInputs.cache
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.AssemblyInfo.cs
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csproj.CoreCompileInputs.cache
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.MvcApplicationPartsAssemblyInfo.cache
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/staticwebassets/Cardiohelp.StaticWebAssets.Manifest.cache
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/staticwebassets/Cardiohelp.StaticWebAssets.xml
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/scopedcss/bundle/Cardiohelp.styles.css
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.RazorTargetAssemblyInfo.cache
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csproj.CopyComplete
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.dll
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.pdb
+E:/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.genruntimeconfig.cache
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/package-lock.json
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/appsettings.json
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.deps.json
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.runtimeconfig.json
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.runtimeconfig.dev.json
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Cardiohelp.pdb
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/MailKit.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/MimeKit.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/NETCore.MailKit.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csprojAssemblyReference.cache
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.MvcApplicationPartsAssemblyInfo.cache
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.AssemblyInfoInputs.cache
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.AssemblyInfo.cs
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.RazorTargetAssemblyInfo.cache
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csproj.CopyComplete
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/staticwebassets/Cardiohelp.StaticWebAssets.Manifest.cache
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/staticwebassets/Cardiohelp.StaticWebAssets.xml
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.dll
+/run/media/marcelharder/WD Caviar/Code/csd-website-2/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.pdb
