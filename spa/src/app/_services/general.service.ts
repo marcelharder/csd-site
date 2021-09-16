@@ -7,7 +7,6 @@ import { EmailMessage } from '../_models/EmailMessage';
 @Injectable()
 export class GeneralService {
     baseUrl = environment.apiUrl;
-    configUrl = environment.configUrl;
 
     constructor(private http: HttpClient) {  }
 
@@ -17,7 +16,7 @@ export class GeneralService {
     getCountryName(countryCode: string) { return this.http.get<string>(this.baseUrl + 'countryName/' + countryCode, { responseType: 'text' as 'json' }); }
     // tslint:disable-next-line: max-line-length
     getHospitalFromHospitalCode(code: number) {return this.http.get<string>(this.baseUrl + 'hospitalName/' + code, { responseType: 'text' as 'json' });}
-    sendMessage(cm: EmailMessage){return this.http.post(this.configUrl + 'sendEmail', cm, { responseType: 'text', });}
+    sendMessage(cm: EmailMessage){return this.http.post(this.baseUrl + 'comm/sendEmail', cm, { responseType: 'text', });}
     // tslint:disable-next-line: max-line-length
     getPresentationUrl(soort:string){return this.http.get<string>(this.baseUrl + 'presentation/' + soort, { responseType: 'text' as 'json' })}
 }

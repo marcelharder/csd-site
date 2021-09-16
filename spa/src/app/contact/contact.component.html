@@ -9,12 +9,12 @@
       <div class="card-header"><h4><span class="badge badge-secondary">Cardiacsurgery Software Developers</span></h4></div>
       <div class="card-body" style="background-color: beige;">
         <div class="row">
-          <div class="col-sm-4"><h5><span class="badge badge-info">Wittelaan 9</span></h5></div>
+          <div class="col-sm-4"><h5><span class="badge badge-info">Deurningerstraat 118</span></h5></div>
           <div class="col-sm-4"></div>
           <div class="col-sm-4"></div>
         </div>
         <div class="row">
-          <div class="col-sm-4"><h5><span class="badge badge-info">3743 CP  Baarn</span></h5></div>
+          <div class="col-sm-4"><h5><span class="badge badge-info">Enschede</span></h5></div>
           <div class="col-sm-4"></div>
           <div class="col-sm-4"></div>
         </div>
@@ -23,24 +23,24 @@
           <div class="col-sm-4"></div>
           <div class="col-sm-4"></div>
         </div>
-       
+
       </div>
       <div class="card-footer"></div>
     </div>
   </div>
   <div class="col-sm-6">
-    <form #editForm="ngForm" (ngSubmit)="sendMessage()" id="editForm">
+     <form #editForm="ngForm" (ngSubmit)="sendMessage()" id="editForm">
     <div class="card">
       <div class="card-header">
         <div class="row">
           <div class="col-sm-8"><h4><span class="badge badge-secondary">Contact Us</span></h4></div>
           <div class="col-sm-4">
-            <button 
-            [disabled]="!editForm.dirty" 
-            class="btn btn-success btn-block" 
-            form="editForm" 
-            type="submit" 
-            class="btn btn-primary" 
+            <button
+            [disabled]="!editForm.dirty"
+            class="btn btn-success btn-block"
+            form="editForm"
+            type="submit"
+            class="btn btn-primary"
             style="float:right">Submit</button></div>
         </div>
       </div>
@@ -60,8 +60,8 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <textarea class="form-control" rows="5"  
-            [(ngModel)]="f.body" 
+            <textarea class="form-control" rows="5"
+            [(ngModel)]="f.body"
             id="comment" name="message">
           </textarea></div>
         </div>
@@ -70,13 +70,13 @@
         </div>
       </div>
     </div>
-    </form>
+    </form> 
   </div>
 </div>
 
   </div>
   <div class="card-footer">
-  
+
   </div>
 </div>
 

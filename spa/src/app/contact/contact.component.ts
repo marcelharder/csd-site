@@ -32,7 +32,7 @@ export class ContactComponent implements OnInit {
     this.subjectList.push({ value: 2, description: 'User registration' });
     this.subjectList.push({ value: 3, description: 'Billing' });
     this.subjectList.push({ value: 4, description: 'Other queries' });
-   
+
   }
 
   sendMessage() {
@@ -40,8 +40,13 @@ export class ContactComponent implements OnInit {
     if (this.f.body !== '') {
       this.gen.sendMessage(this.f).subscribe(
         (next) => {
-          this.alertify.success('Message sent');
-          this.editForm.reset(this.f);
+          debugger;
+          if(next === "gelukt")
+          {
+             this.alertify.success('Message sent');
+             this.editForm.reset(this.f);
+          }
+
         },
         (error) => {
           this.alertify.error(error);

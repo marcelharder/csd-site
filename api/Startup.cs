@@ -40,6 +40,7 @@ namespace csd
 
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IUser, UserRepository>();
+            services.AddScoped<IMail, Mail>();
             services.AddScoped<Dropdownlists>();
             services.AddScoped<SpecialMaps>();
 
