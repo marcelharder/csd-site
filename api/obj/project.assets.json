@@ -5247,11 +5247,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
       "projectName": "Cardiohelp",
       "projectPath": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
       "packagesPath": "/home/marcel/.nuget/packages/",
       "outputPath": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/obj/",
+=======
+      "projectUniqueName": "/home/megan/Code/site-02/csd-site/api/Cardiohelp.csproj",
+      "projectName": "Cardiohelp",
+      "projectPath": "/home/megan/Code/site-02/csd-site/api/Cardiohelp.csproj",
+      "packagesPath": "/home/megan/.nuget/packages/",
+      "outputPath": "/home/megan/Code/site-02/csd-site/api/obj/",
+>>>>>>> 83be9f53e0f6d5c9e2974ee28c0d26b7c473c484
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/marcel/.nuget/NuGet/NuGet.Config"
