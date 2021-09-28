@@ -14,6 +14,7 @@ import { CdaComponent } from './cda/cda.component';
 import { TracComponent } from './trac/trac.component';
 import { EchoComponent } from './echo/echo.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
+import { OgiComponent } from './ogi/ogi.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'soa', component: SoaComponent },
   { path: 'waitlist', component: WaitlistComponent },
   { path: 'ovi', component: OviComponent },
+  { path: 'ogi', component: OgiComponent },
   { path: 'cda', component: CdaComponent },
   { path: 'trac', component: TracComponent },
   { path: 'echo', component: EchoComponent },
