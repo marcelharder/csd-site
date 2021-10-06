@@ -5247,19 +5247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
+      "projectUniqueName": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
       "projectName": "Cardiohelp",
-      "projectPath": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
+      "projectPath": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
       "packagesPath": "/home/marcel/.nuget/packages/",
-      "outputPath": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/obj/",
-=======
-      "projectUniqueName": "/home/megan/Code/site-02/csd-site/api/Cardiohelp.csproj",
-      "projectName": "Cardiohelp",
-      "projectPath": "/home/megan/Code/site-02/csd-site/api/Cardiohelp.csproj",
-      "packagesPath": "/home/megan/.nuget/packages/",
-      "outputPath": "/home/megan/Code/site-02/csd-site/api/obj/",
->>>>>>> 83be9f53e0f6d5c9e2974ee28c0d26b7c473c484
+      "outputPath": "/home/marcel/code/Code/csd-site/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/marcel/.nuget/NuGet/NuGet.Config"
@@ -5272,7 +5264,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5284,7 +5275,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -5333,12 +5323,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[3.1.19, 3.1.19]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5347,7 +5331,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/marcel/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.413/RuntimeIdentifierGraph.json"
       }
     }
   }
