@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OP7mV7OonRire9gaueAcXPYaQj58ath5Q892IXuRQ4Yq0xzMDhx41l3d7Yc+Awk1Pn5tyM2Ea2mzGWc2evZZqQ==",
+  "dgSpecHash": "8p7Nn6HlLE+KtB32i4RWSAlb8pw/Bt0aSkq5OUJ/oCtGvEMFYTm3LTjoA/+o1uctlRFuTq0tOe9XGuh7t0SiQg==",
   "success": true,
-  "projectFilePath": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
+  "projectFilePath": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
   "expectedPackageFiles": [
     "/home/marcel/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
     "/home/marcel/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/7.0.0/automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
@@ -113,8 +113,7 @@
     "/home/marcel/.nuget/packages/system.text.json/4.7.1/system.text.json.4.7.1.nupkg.sha512",
     "/home/marcel/.nuget/packages/system.threading/4.3.0/system.threading.4.3.0.nupkg.sha512",
     "/home/marcel/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
-    "/home/marcel/.nuget/packages/system.threading.threadpool/4.3.0/system.threading.threadpool.4.3.0.nupkg.sha512",
-    "/home/marcel/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.19/microsoft.netcore.app.host.linux-x64.3.1.19.nupkg.sha512"
+    "/home/marcel/.nuget/packages/system.threading.threadpool/4.3.0/system.threading.threadpool.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
