@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj": {}
+    "/home/marcel/Documents/csd-site/api/Cardiohelp.csproj": {}
   },
   "projects": {
-    "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj": {
+    "/home/marcel/Documents/csd-site/api/Cardiohelp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
+        "projectUniqueName": "/home/marcel/Documents/csd-site/api/Cardiohelp.csproj",
         "projectName": "Cardiohelp",
-        "projectPath": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
+        "projectPath": "/home/marcel/Documents/csd-site/api/Cardiohelp.csproj",
         "packagesPath": "/home/marcel/.nuget/packages/",
-        "outputPath": "/home/marcel/code/Code/csd-site/api/obj/",
+        "outputPath": "/home/marcel/Documents/csd-site/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/marcel/.nuget/NuGet/NuGet.Config"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -83,6 +85,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[3.1.19, 3.1.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -91,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.413/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/marcel/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

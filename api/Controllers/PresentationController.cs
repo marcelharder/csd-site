@@ -24,7 +24,7 @@ namespace csd.Controllers
             _testje = testje;
         }
 
-        [Route("api/presentation/{id}")]
+       /*  [Route("api/presentation/{id}")]
         public async Task<IActionResult> Get(string id)
         {
             var help = "";
@@ -38,6 +38,25 @@ namespace csd.Controllers
                                 help = "";
                                 help = s.Element("url").Value;
                             }
+                        });
+            return Ok(help);
+
+
+        } */
+
+         [Route("api/presentation/{id}")]
+        public async Task<IActionResult> Get(string id)
+        {
+            var help = "";
+
+            await Task.Run(() =>
+                        {
+                          if(id == "soa"){help = "https://docs.google.com/presentation/d/1vGzApLXgRND9iEnoPrPLwOggLpljfrr-S5sfr6XRu6M/edit?usp=sharing";}
+                          if(id == "ovi"){help = "https://docs.google.com/presentation/d/1mD0BFR3N2W7eoH5tpTn8tbb0AvqoOqcf6kp3CBDrKIk/edit?usp=sharing";}
+                          if(id == "ogi"){help = "https://docs.google.com/presentation/d/1mD0BFR3N2W7eoH5tpTn8tbb0AvqoOqcf6kp3CBDrKIk/edit?usp=sharing";}
+                          if(id == "cda"){help = "https://docs.google.com/presentation/d/1Tg86Gr3_ubZL-O8ev137nRNmt0Lj63vc9MOO8mCrAmI/edit?usp=sharing";}
+                          if(id == "wait"){help = "https://docs.google.com/presentation/d/1qTv-7DT9ARw_OpeTSoWx1nfmm6Nxc2FLRSDk6c3jcJU/edit?usp=sharing";}
+                          if(id == "trac"){help = "https://docs.google.com/presentation/d/1e7kTDtSyxp51NOzL0CjG4oaE6zNQuu0I4kJ8xU2SSLE/edit?usp=sharing";}
                         });
             return Ok(help);
 

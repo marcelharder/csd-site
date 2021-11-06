@@ -15,13 +15,11 @@
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/fontawesome-webfont.f691f37e57f04c152e23.woff
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/index.html
-/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/main.d1439944328bdd47b301.js
+/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/main.58741b1ceca906ede2b1.js
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/polyfills-es5.67d87c529ca6e45dc4f5.js
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/polyfills.e3d3cc3f302b8fde0a84.js
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/runtime.e189d4a648302a5b2c97.js
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/styles.9f252d4f9c5a73faa095.css
-/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/appsettings.Development.json
-/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/appsettings.json
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/package-lock.json
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/Cardiohelp.dll
 /media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/bin/Release/netcoreapp3.1/publish/Cardiohelp.deps.json

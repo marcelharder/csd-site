@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AlertifyService } from '../_services/alertify.service';
 import { GeneralService } from '../_services/general.service';
 import { environment } from 'src/environments/environment';
+import { PdfService } from '../_services/pdf.service';
 
 @Component({
   selector: 'app-soa',
@@ -11,8 +12,10 @@ import { environment } from 'src/environments/environment';
 })
 export class SoaComponent implements OnInit {
   baseUrl = environment.apiUrl;
+  test: any;
   presentationUrl = '';
   constructor(
+    private pdf: PdfService,
     private router: Router,
     private alertify: AlertifyService,
     private gen: GeneralService) {}
@@ -20,8 +23,10 @@ export class SoaComponent implements OnInit {
   ngOnInit(): void {}
 
   showPresentatie(id: number) {
-    // window.open(this.baseUrl + 'getPDF/1');
-     this.gen.getPresentationUrl('soa').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
+    
+     this.gen.getPresentationUrl('soa').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); });
+      
+   
   }
 
   showDemo(id: number) {

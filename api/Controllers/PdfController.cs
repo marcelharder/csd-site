@@ -18,7 +18,7 @@ namespace csd.Controllers
 
         [Route("api/getPDF/{id}")]
         [Produces("application/pdf")]
-        public IActionResult Get(int id)
+         public IActionResult Get(int id)
         {
             var fn = "";
             switch (id)

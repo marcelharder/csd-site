@@ -55,12 +55,13 @@ import { TracComponent } from './trac/trac.component';
 import { EchoComponent } from './echo/echo.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { OgiComponent } from './ogi/ogi.component';
+import { PdfService } from './_services/pdf.service';
 
 
 export function tokenG() { return localStorage.getItem('token'); }
 
 @NgModule({
-   declarations: [		
+   declarations: [			
       AppComponent,
       HomeComponent,
       AboutComponent,
@@ -81,11 +82,12 @@ export function tokenG() { return localStorage.getItem('token'); }
       TracComponent,
       EchoComponent,
       TutorialsComponent,
-      OgiComponent
+      OgiComponent,
+      
    ],
    imports: [
       CommonModule,
-      HttpClientModule,
+       HttpClientModule,
       FileUploadModule,
       BsDropdownModule.forRoot(),
       TabsModule.forRoot(),
@@ -125,7 +127,8 @@ export function tokenG() { return localStorage.getItem('token'); }
         ExpiringProductsResolver,
         ProfileResolver,
         GraphService,
-        RegistryService
+        RegistryService,
+        PdfService
         ],
    bootstrap: [
       AppComponent

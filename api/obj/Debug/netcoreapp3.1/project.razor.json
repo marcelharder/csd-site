@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "FilePath": "/media/marcel/WD Caviar/Code/csd-website-2/csd-site/api/Cardiohelp.csproj",
-=======
-  "FilePath": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
->>>>>>> master
+  "FilePath": "/home/marcel/Documents/csd-site/api/Cardiohelp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",

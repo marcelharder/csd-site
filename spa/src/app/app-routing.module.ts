@@ -23,6 +23,8 @@ const routes: Routes = [
   { path: 'soa', component: SoaComponent },
   { path: 'waitlist', component: WaitlistComponent },
   { path: 'ovi', component: OviComponent },
+ 
+ 
   { path: 'ogi', component: OgiComponent },
   { path: 'cda', component: CdaComponent },
   { path: 'trac', component: TracComponent },
@@ -36,6 +38,7 @@ const routes: Routes = [
     children: [
 
     { path: 'users', component: UsersComponent },
+    
 
 
 
