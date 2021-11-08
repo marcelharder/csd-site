@@ -23,8 +23,8 @@ export class SoaComponent implements OnInit {
   ngOnInit(): void {}
 
   showPresentatie(id: number) {
-    
-     this.gen.getPresentationUrl('soa').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); });
+    window.open("https://docs.google.com/presentation/d/1vGzApLXgRND9iEnoPrPLwOggLpljfrr-S5sfr6XRu6M/edit?usp=sharing");
+    // this.gen.getPresentationUrl('soa').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); });
       
    
   }

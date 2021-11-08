@@ -22,7 +22,8 @@ export class CdaComponent implements OnInit {
   showPresentatie(id: number) 
   {
     // window.open(this.baseUrl + 'getPDF/4');
-    this.gen.getPresentationUrl('cda').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
+    window.open("https://docs.google.com/presentation/d/1Tg86Gr3_ubZL-O8ev137nRNmt0Lj63vc9MOO8mCrAmI/edit?usp=sharing");
+   // this.gen.getPresentationUrl('cda').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
   }
 
   showDemo(id: number) {

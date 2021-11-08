@@ -20,7 +20,8 @@ export class OviComponent implements OnInit {
 
   showPresentatie(id: number) {
     // window.open(this.baseUrl + 'getPDF/3');
-     this.gen.getPresentationUrl('ovi').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
+    window.open("https://docs.google.com/presentation/d/1mD0BFR3N2W7eoH5tpTn8tbb0AvqoOqcf6kp3CBDrKIk/edit?usp=sharing");
+    // this.gen.getPresentationUrl('ovi').subscribe((next)=>{ this.presentationUrl = next;  window.open(this.presentationUrl); })
    }
 
 
