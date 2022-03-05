@@ -217,7 +217,6 @@
 /home/marcel/code/Code/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /home/marcel/code/Code/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /home/marcel/code/Code/csd-site/api/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
-/home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csprojAssemblyReference.cache
 /home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.AssemblyInfoInputs.cache
 /home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.AssemblyInfo.cs
 /home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csproj.CoreCompileInputs.cache
@@ -229,3 +228,6 @@
 /home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.dll
 /home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.pdb
 /home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.genruntimeconfig.cache
+/home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.csproj.AssemblyReference.cache
+/home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/Cardiohelp.GeneratedMSBuildEditorConfig.editorconfig
+/home/marcel/code/Code/csd-site/api/obj/Debug/netcoreapp3.1/scopedcss/bundle/Cardiohelp.styles.css
