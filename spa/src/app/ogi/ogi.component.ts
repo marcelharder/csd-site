@@ -21,6 +21,6 @@ export class OgiComponent implements OnInit {
    }
 
   showDemo(){ this.alertify.confirm('Your login credentials are: UN: demovendor PWD: password',
-  () => { window.open('http://87.253.157.146:8055');  })}}
+  () => { window.open('http://206.189.4.65:8055');  })}}
 
 

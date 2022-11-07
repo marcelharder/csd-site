@@ -31,13 +31,13 @@ export class OviComponent implements OnInit {
 
 
     if(id === 1){ this.alertify.confirm('Your login credentials are: UN: demosuperuser PWD: password',
-    () => { window.open('http://87.253.157.146:8045');  })}
+    () => { window.open('http://206.189.4.65:8045');  })}
 
     if(id === 2){ this.alertify.confirm('Your login credentials are: UN: demovendor PWD: password',
-    () => { window.open('http://87.253.157.146:8045');  })}
+    () => { window.open('http://206.189.4.65:8045');  })}
 
     if(id === 3){ this.alertify.confirm('Your login credentials are: UN: demosurgeon PWD: password',
-    () => { window.open('http://87.253.157.146:8045');  })}
+    () => { window.open('http://206.189.4.65:8045');  })}
 
 
 

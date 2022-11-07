@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vz5yjCx2e1WNHZQdNBsMMkIMcegkgQTnfVowR1TtbtG2ia/bUvrXYh1VraAEa8yVSDdVSq0AYpxT4UoCz/imXw==",
+  "dgSpecHash": "oMVR8JiT5VkQD9N/4Qx6P0AyYumxfxpzIlMDiJCI86Obt5zX+nID7SxtU5XUNN0ePiYgPT2yxdsTzT5V3nNFGQ==",
   "success": true,
   "projectFilePath": "/home/marcel/code/Code/csd-site/api/Cardiohelp.csproj",
   "expectedPackageFiles": [
@@ -113,7 +113,8 @@
     "/home/marcel/.nuget/packages/system.text.json/4.7.1/system.text.json.4.7.1.nupkg.sha512",
     "/home/marcel/.nuget/packages/system.threading/4.3.0/system.threading.4.3.0.nupkg.sha512",
     "/home/marcel/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
-    "/home/marcel/.nuget/packages/system.threading.threadpool/4.3.0/system.threading.threadpool.4.3.0.nupkg.sha512"
+    "/home/marcel/.nuget/packages/system.threading.threadpool/4.3.0/system.threading.threadpool.4.3.0.nupkg.sha512",
+    "/home/marcel/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.25/microsoft.netcore.app.host.linux-x64.3.1.25.nupkg.sha512"
   ],
   "logs": []
 }

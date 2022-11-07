@@ -28,6 +28,6 @@ export class CdaComponent implements OnInit {
 
   showDemo(id: number) {
     this.alertify.confirm('Your login credentials are: UN: demo PWD: password',
-      () => { if (id === 1) { window.open('http://87.253.157.146:8047'); } })
+      () => { if (id === 1) { window.open('http://206.189.4.65:8047'); } })
   }
 }

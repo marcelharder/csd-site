@@ -15,7 +15,7 @@
 /home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg
 /home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/fontawesome-webfont.f691f37e57f04c152e23.woff
 /home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/index.html
-/home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/main.6077275dd23aa52827bc.js
+/home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/main.5c24d10e91f163fd2dd3.js
 /home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/polyfills-es5.67d87c529ca6e45dc4f5.js
 /home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/polyfills.e3d3cc3f302b8fde0a84.js
 /home/marcel/code/Code/csd-site/api/bin/Release/netcoreapp3.1/publish/wwwroot/runtime.e189d4a648302a5b2c97.js
