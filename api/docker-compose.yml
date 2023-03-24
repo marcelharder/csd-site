@@ -1,0 +1,26 @@
+version: '3'
+services: 
+  #sqlserver:
+   # image: mcr.microsoft.com/mssql/server:2019-latest
+   # restart: always
+   # ports:
+   #   - 1433:1433
+   # environment:
+   #  MSSQL_SA_PASSWORD: example@123
+   #  MSSQL_PID: EXPRESS
+   #  ACCEPT_EULA: Y
+   # networks: 
+   #   - internal-container-network
+   # volumes:
+   #   - sqlserver-data:/var/opt/mssql
+  csd:
+    image: csd_app:v1
+    networks: 
+     - internal-container-network
+    ports:
+     - 80:80
+   
+
+networks:
+ internal-container-network:
+  driver: bridge

@@ -12,39 +12,7 @@ namespace csd.Controllers
     [ApiController]
     public class PresentationController : ControllerBase
     {
-        XElement _testje;
-        private readonly IWebHostEnvironment _env;
-        public PresentationController(IWebHostEnvironment env)
-        {
-            _env = env;
-            var content = _env.ContentRootPath;
-            var filename = "data/url.xml";
-            var test = Path.Combine(content, filename);
-            XElement testje = XElement.Load($"{test}");
-            _testje = testje;
-        }
-
-       /*  [Route("api/presentation/{id}")]
-        public async Task<IActionResult> Get(string id)
-        {
-            var help = "";
-
-            await Task.Run(() =>
-                        {
-                            IEnumerable<XElement> op = _testje.Descendants("powerpoint").Elements("items").Elements(id);
-                           
-                            foreach (XElement s in op)
-                            {
-                                help = "";
-                                help = s.Element("url").Value;
-                            }
-                        });
-            return Ok(help);
-
-
-        } */
-
-         [Route("api/presentation/{id}")]
+        [Route("api/presentation/{id}")]
         public async Task<IActionResult> Get(string id)
         {
             var help = "";
@@ -59,11 +27,6 @@ namespace csd.Controllers
                           if(id == "trac"){help = "https://docs.google.com/presentation/d/1e7kTDtSyxp51NOzL0CjG4oaE6zNQuu0I4kJ8xU2SSLE/edit?usp=sharing";}
                         });
             return Ok(help);
-
-
         }
-
-
-
     }
 }

@@ -28,16 +28,12 @@ namespace csd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddNewtonsoftJson();
             services.AddHttpContextAccessor();
             services.AddCors();
 
 
 
-            services.AddDbContext<dataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
-            // .EnableSensitiveDataLogging()
-            );
-
+          
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IUser, UserRepository>();
             services.AddScoped<IMail, Mail>();
